@@ -1,22 +1,50 @@
-using System;
-using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
+using UIJobsAPI.Models;
 
-namespace UijobsApi.Models
+
+[Index(nameof(idEmpresa))]
+public class EnderecoEmpresa
 {
-    public class EnderecoEmpresa
-    {
-        [Key]
-        public int idEndereco { get; set; }
-        public string CEP { get; set; }
-        public string logradouro { get; set; }
-        public string endereco { get; set; }
-        public int numero { get; set; }
-        public string complemento { get; set; }
-        public string bairro { get; set; }
-        public string cidade { get; set; }
-        public string uf { get; set; }
-    }
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int idEnderecoEmpresa { get; set; }
+
+    [Required]
+    public int idEmpresa { get; set; }
+
+    [Required]
+    [StringLength(8)]
+    public string cep { get; set; }
+
+    [Required]
+    [StringLength(15)]
+    public string logradouro { get; set; }
+
+    [Required]
+    [StringLength(50)]
+    public string endereco { get; set; }
+
+    [Required]
+    [StringLength(5)]
+    public string numero { get; set; }
+
+    [StringLength(20)]
+    public string complemento { get; set; }
+
+    [Required]
+    [StringLength(30)]
+    public string bairro { get; set; }
+
+    [Required]
+    [StringLength(50)]
+    public string cidade { get; set; }
+
+    [Required]
+    [StringLength(2)]
+    public string uf { get; set; }
+
+    [ForeignKey("idEmpresa")]
+    public Empresa Empresa { get; set; }
 }

@@ -1,15 +1,21 @@
-using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using UIJobsAPI.Models.Enuns;
 
-namespace UijobsApi.Models
+namespace UIJobsAPI.Models
 {
     public class Curso
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int idCurso { get; set; }
-        public string nomeCurso { get; set; }
+
+        [Required]
+        public String nomeCurso { get; set; }
+
+        [Required]
+        [MaxLength(3)]
+        public string diplomaCurso { get; set; }
+
     }
 }

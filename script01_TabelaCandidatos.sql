@@ -15,7 +15,7 @@ CREATE TABLE [Candidatos] (
     [Id] int NOT NULL IDENTITY,
     [NomeMae] nvarchar(max) NOT NULL,
     [Nome] nvarchar(max) NOT NULL,
-    [Email] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL UNIQUE,
     [Cep] nvarchar(max) NOT NULL,
     CONSTRAINT [PK_Candidatos] PRIMARY KEY ([Id])
 );

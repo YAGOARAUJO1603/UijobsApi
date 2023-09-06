@@ -1,15 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using UIJobsAPI.Models.Enuns;
 
-namespace UijobsApi.Models
+namespace UIJobsAPI.Models
 {
     public class Beneficio
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int idBeneficio { get; set; }
-        public string nomeBeneficio { get; set; }
+
+        [Required]
+        public BeneficioEnum nomeBeneficio { get; set; }
     }
 }

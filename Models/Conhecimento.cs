@@ -1,16 +1,23 @@
-using System;
-using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
+using UIJobsAPI.Models.Enuns;
 
-namespace UijobsApi.Models
+namespace UIJobsAPI.Models
 {
+    [PrimaryKey(nameof(idConhecimentos))]
+    [Index(nameof(idNivel))]
     public class Conhecimento
     {
-        [Key]
-        public int ConhecimentoId  { get; set; }
-        public string nomeConhecimento { get; set; }
+        [Required]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int idConhecimentos { get; set; }
+        [Required]
+        public int idNivel { get; set; }
+        [Required]
+        public ConhecimentoEnum nomeConhecimento { get; set; }
 
+        [ForeignKey("idNivel")]
+        public Nivel Nivel { get; set; }
     }
 }

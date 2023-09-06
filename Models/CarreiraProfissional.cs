@@ -1,17 +1,32 @@
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
+using UIJobsAPI.Models;
 
-namespace UijobsApi.Models
+namespace UIJobsAPI.Models;
+public class CarreiraProfissional
 {
-    public class CarreiraProfissional
-    {
-        [Key]
-        public int idCarreiraProfissional { get; set; }
-        public string nomeEmpresa { get; set; }
-        public string tempo { get; set; }
-        public string cargo { get; set; }
-    }
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int idCarreiraProfissional { get; set; }
+
+    [Required]
+    public int idCurriculo { get; set; }
+
+    [Required]
+    [MaxLength(150)]
+    public string nomeEmpresa { get; set; }
+
+    [Required]
+    public DateTime tempoInicio { get; set; }
+
+    [Required]
+    public DateTime tempoFim { get; set; }
+
+    [Required]
+    [MaxLength(50)]
+    public string cargo { get; set; }
+
+    [ForeignKey("idCurriculo")]
+    public Curriculo Curriculo { get; set; }
 }

@@ -1,16 +1,20 @@
-using System;
-using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
+using UIJobsAPI.Models.Enuns;
 
-namespace UijobsApi.Models
+namespace UIJobsAPI.Models
 {
+    [PrimaryKey(nameof(idPortes))]
     public class Porte
     {
-        [Key]
-        public int idPorte { get; set; }
-        public string descricao { get; set; }
-
+        [NotNull]
+        [Required]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int idPortes { get; set; }
+        [NotNull]
+        [Required]
+        public PorteEnum tiposPortes { get; set; }
     }
 }

@@ -1,23 +1,48 @@
-using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace UijobsApi.Models
+namespace UIJobsAPI.Models
 {
     public class EnderecoCandidato
     {
         [Key]
-        public int Id { get; set; }
-        public string CEP { get; set; }
-        //Tirar logradouro, mesma coisa que endereço
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int idEnderecoCandidato { get; set; }
+
+        [Required]
+        public int idCandidato { get; set; }
+
+        [Required]
+        public int cep { get; set; }
+
+        [Required]
+        [MaxLength(15)]
         public string logradouro { get; set; }
+
+        [Required]
+        [MaxLength(50)]
         public string endereco { get; set; }
-        public int numero { get; set; }
-        public string  complemento { get; set; }
+
+        [Required]
+        [MaxLength(5)]
+        public string numero { get; set; }
+
+        [MaxLength(15)]
+        public string complemento { get; set; }
+
+        [Required]
+        [MaxLength(30)]
         public string bairro { get; set; }
+
+        [Required]
+        [MaxLength(50)]
         public string cidade { get; set; }
+
+        [Required]
+        [MaxLength(2)]
         public string uf { get; set; }
+
+        [ForeignKey("idCandidato")]
+        public Candidato Candidato { get; set; }
     }
 }

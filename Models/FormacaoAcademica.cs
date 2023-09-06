@@ -1,20 +1,24 @@
-using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace UijobsApi.Models
+namespace UIJobsAPI.Models
 {
     public class FormacaoAcademica
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int idFormacaoAcademica { get; set; }
 
-        public Graduacao IdGraduacao {get; set;}   
+        [Required]
+        public int idEscolaridade { get; set; }
 
-        public Curso idCurso { get; set; }
-        
-        public string idiomas { get; set; }
+        [Required]
+        public int idCursos { get; set; }
+
+        [ForeignKey("idCursos")]
+        public Curso Curso { get; set; }
+
+        [ForeignKey("idEscolaridade")]
+        public Escolaridade Escolaridade { get; set; }
     }
 }

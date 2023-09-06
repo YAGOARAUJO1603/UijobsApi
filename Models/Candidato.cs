@@ -1,16 +1,49 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace UijobsApi.Models
+namespace UIJobsAPI.Models
 {
+
     public class Candidato
     {
-        public int Id {get; set;}
-        public string NomeMae {get; set;}
-        public string Nome {get; set;}
-        public string Email {get; set;}
-        public string CEP {get; set;}
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int idCandidato { get; set; }
+/*
+        [Required]
+        public int idTokenFirebase { get; set; }
+*/
+        [Required]
+        public int idCurriculo { get; set; }
+
+        [Required]
+        [MaxLength(60)]
+        public string nome { get; set; }
+
+        [Required]
+        [MaxLength(100)]
+        [EmailAddress]
+        public string email { get; set; }
+
+        
+        //public byte[] foto { get; set; }
+
+        [Required]
+        [MaxLength(100)]
+        public string nomeMae { get; set; }
+
+        [ForeignKey("idCurriculo")]
+        public Curriculo Curriculo { get; set; }
+        
+
+        /*public static implicit operator Candidato(void v)
+        {
+            throw new NotImplementedException();
+        }*/
+
+        /*
+       [ForeignKey("idTokenFirebase")]
+       public TokenFirebase TokenFirebase { get; set; }
+*/
     }
 }

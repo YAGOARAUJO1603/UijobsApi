@@ -1,137 +1,88 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using UijobsApi.Data;
-using UijobsApi.Models;
+using UIJobsAPI.Data;
+using UIJobsAPI.Exceptions;
+using UIJobsAPI.Models;
+using UIJobsAPI.Repositories.Interfaces;
+using UIJobsAPI.Services.Candidatos;
+using UIJobsAPI.Services.Interfaces;
 
-namespace UijobsApi.Controllers
+namespace UIJobsAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-
+    [Route("api/v1/[controller]")]
     public class CandidatosController : ControllerBase
     {
-        
-      private readonly DataContext _context; // Declaração de
+        private readonly DataContext _context;
+        private readonly ICandidatoService _candidatoService;
+        private readonly ICandidatoRepository _candidatoRepository;
 
-        public CandidatosController(DataContext context)
+        public CandidatosController(DataContext context, ICandidatoService candidatoService, ICandidatoRepository candidatoRepository)
         {
-            //Inicialização do atributo a partir de um parâmetro          
             _context = context;
+            _candidatoService = candidatoService;
+            _candidatoRepository = candidatoRepository;
         }
-
-        [HttpGet("{id}")] //Buscar pelo id
-        public async Task<IActionResult> GetSingle(int id)
-        {
-            try
-            {
-                Candidato c = await _context.Candidatos
-                    .FirstOrDefaultAsync(cBusca => cBusca.Id == id);
-
-                return Ok(c);
-            }
-            catch (System.Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
-        //Listar todos os Candidatos
         [HttpGet("GetAll")]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetAllAsync()
         {
             try
             {
-                List<Candidato> lista = await _context.Candidatos.ToListAsync();
-                return Ok(lista);
+                IEnumerable<Candidato> listacandidatos = await _candidatoService.GetAllCandidatosAsync();
+                return Ok(listacandidatos);
             }
-            catch (System.Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Add(Candidato novoCandidato)
-        {
-            try
-            {
-                await _context.Candidatos.AddAsync(novoCandidato);
-                await _context.SaveChangesAsync();
-
-                return Ok(novoCandidato.Id);
-            }
-            catch (System.Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
-        [HttpPut()]
-        public async Task<IActionResult> Update(Candidato candidatoAtualizado)
-        {
-            try
-            {
-                /*var cliente = await _context.Clientes.FirstOrDefaultAsync(p => p.Id == clienteAtualizado.Id);
-
-                if (cliente == null)
-                {
-                    throw new Exception("Cliente não pode ser nulo");
-                }*/
-                    _context.Candidatos.Update(candidatoAtualizado);
-                    int linhaAfetadas = await _context.SaveChangesAsync();
-
-
-                return Ok(linhaAfetadas);
-            }   
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetByIdAsync(int id)
         {
             try
             {
-                Candidato cRemover = await _context.Candidatos.FirstOrDefaultAsync(c => c.Id == id);
-
-                _context.Candidatos.Remove(cRemover);
-                int linhaAfetadas = await _context.SaveChangesAsync();
-                return Ok(linhaAfetadas);
+                Candidato candidato = await _candidatoService.GetCandidatoByIdAsync(id);
+                return Ok(candidato);
             }
-            catch (System.Exception ex)
+            catch (BaseException ex)
+            {
+                // isso a gente controla
+                return ex.GetResponse();
+            }
+            catch (Exception ex)
+            {
+                // isso foge da gente
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddCandidatoAsync([FromBody] Candidato novoCandidato)
+        {
+            try
+            {
+                Candidato candidato = await _candidatoService.AddCandidatoAsync(novoCandidato);
+                return Created("Candidato", candidato);
+            }
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
+
             }
-        }   
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteCandidato(int id)
+        {
+            try
+            {
+                await _candidatoRepository.DeleteCandidatoByIdAsync(id);
+                return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message); // Retorna um StatusCode 400 Bad Request em caso de erro.
+            }
+        }
     }
 }

@@ -1,160 +1,239 @@
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\appsettings.json
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.exe
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.deps.json
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.runtimeconfig.json
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.pdb
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.OpenApi.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.AssemblyReference.cache
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfoInputs.cache
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfo.cs
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CoreCompileInputs.cache
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.UijobsApi.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.build.UijobsApi.props
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.UijobsApi.props
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.UijobsApi.props
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets.build.json
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\scopedcss\bundle\UijobsApi.styles.css
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CopyComplete
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\refint\UijobsApi.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.pdb
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.genruntimeconfig.cache
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\obj\Debug\net7.0\ref\UijobsApi.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Azure.Core.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Azure.Identity.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Humanizer.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Mono.TextTemplating.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Newtonsoft.Json.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\System.CodeDom.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\System.Drawing.Common.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\System.Memory.Data.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\System.Runtime.Caching.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\System.Security.Permissions.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\System.Windows.Extensions.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\DESENVOLVIMENTO_SISTEMAS\3_Semestre\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\appsettings.Development.json
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\appsettings.json
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.exe
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.deps.json
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.runtimeconfig.json
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.pdb
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Azure.Core.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Azure.Identity.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Humanizer.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.OpenApi.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Mono.TextTemplating.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Newtonsoft.Json.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\System.CodeDom.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\System.Drawing.Common.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\System.Memory.Data.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\System.Runtime.Caching.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\System.Security.Permissions.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\System.Windows.Extensions.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.AssemblyReference.cache
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.GeneratedMSBuildEditorConfig.editorconfig
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfoInputs.cache
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfo.cs
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CoreCompileInputs.cache
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cs
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cache
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.UijobsApi.Microsoft.AspNetCore.StaticWebAssets.props
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.build.UijobsApi.props
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.UijobsApi.props
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.UijobsApi.props
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets.pack.json
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets.build.json
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets.development.json
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\scopedcss\bundle\UijobsApi.styles.css
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CopyComplete
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\refint\UijobsApi.dll
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.pdb
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.genruntimeconfig.cache
-A:\3DS\ARAUJO\TCC\UijobsApi\obj\Debug\net7.0\ref\UijobsApi.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\appsettings.json
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\UIJobsAPI.exe
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\UIJobsAPI.deps.json
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\UIJobsAPI.runtimeconfig.json
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\UIJobsAPI.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\UIJobsAPI.pdb
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Humanizer.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.csproj.AssemblyReference.cache
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.AssemblyInfoInputs.cache
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.AssemblyInfo.cs
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.csproj.CoreCompileInputs.cache
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\staticwebassets\msbuild.UIJobsAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\staticwebassets\msbuild.build.UIJobsAPI.props
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.UIJobsAPI.props
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.UIJobsAPI.props
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\scopedcss\bundle\UIJobsAPI.styles.css
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.csproj.CopyComplete
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\refint\UIJobsAPI.dll
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.pdb
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.genruntimeconfig.cache
+C:\Users\pvpda\OneDrive\Área de Trabalho\UiJobs_Novo\UIJobsAPI\obj\Debug\net7.0\ref\UIJobsAPI.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.csproj.AssemblyReference.cache
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.AssemblyInfoInputs.cache
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.AssemblyInfo.cs
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.csproj.CoreCompileInputs.cache
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\refint\UIJobsAPI.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.pdb
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\appsettings.Development.json
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\appsettings.json
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\UIJobsAPI.exe
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\UIJobsAPI.deps.json
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\UIJobsAPI.runtimeconfig.json
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\UIJobsAPI.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\UIJobsAPI.pdb
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Azure.Core.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Azure.Identity.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Humanizer.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\System.CodeDom.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\staticwebassets\msbuild.UIJobsAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\staticwebassets\msbuild.build.UIJobsAPI.props
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.UIJobsAPI.props
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.UIJobsAPI.props
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\staticwebassets.build.json
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\staticwebassets.development.json
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\scopedcss\bundle\UIJobsAPI.styles.css
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.csproj.CopyComplete
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.genruntimeconfig.cache
+C:\Arquivos\3DS\Hugo\TCC\UIJobs\UIJobsAPI\obj\Debug\net7.0\ref\UIJobsAPI.dll
+A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.csproj.AssemblyReference.cache
+A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.GeneratedMSBuildEditorConfig.editorconfig
+A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.AssemblyInfoInputs.cache
+A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.AssemblyInfo.cs
+A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.csproj.CoreCompileInputs.cache
+A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.MvcApplicationPartsAssemblyInfo.cs
+A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.MvcApplicationPartsAssemblyInfo.cache
+A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.dll
+A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\refint\UIJobsAPI.dll
+A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.pdb
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.AssemblyReference.cache
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfoInputs.cache
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfo.cs
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CoreCompileInputs.cache
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\refint\UijobsApi.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.pdb
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\appsettings.json
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\UijobsApi.exe
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\UijobsApi.deps.json
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\UijobsApi.runtimeconfig.json
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\UijobsApi.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\UijobsApi.pdb
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Humanizer.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.UijobsApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.build.UijobsApi.props
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.UijobsApi.props
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.UijobsApi.props
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\scopedcss\bundle\UijobsApi.styles.css
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CopyComplete
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.genruntimeconfig.cache
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\ref\UijobsApi.dll

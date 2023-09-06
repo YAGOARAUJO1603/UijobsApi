@@ -1,65 +1,50 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using UijobsApi.Data;
-using UijobsApi.Models;
+using UIJobsAPI.Data;
+using UIJobsAPI.Models;
+using UIJobsAPI.Services.Candidatos;
+using UIJobsAPI.Services.Cursos;
+using UIJobsAPI.Services.Interfaces;
 
-namespace UijobsApi.Controllers
+namespace UIJobsAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    
     public class CursosController : ControllerBase
     {
+        private readonly ICursoService _cursoService;
 
-        private readonly DataContext _context;
-
-        public CursosController(DataContext context)
+        public CursosController(ICursoService cursoService)
         {
-            _context = context;
+            _cursoService = cursoService;
         }
-
-        // Listar
         [HttpGet("GetAll")]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetAllAsync()
         {
             try
             {
-                List<Curso> lista = await _context.Cursos.ToListAsync();
-                return Ok(lista);
+                IEnumerable<Curso> listaCursos = await _cursoService.GetAllCursosAsync();
+                return Ok(listaCursos);
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
 
-
-        [HttpGet("Consultar")]
-        public async Task<IActionResult> Consultar(string nomeCurso)
+        [HttpPost]
+        public async Task<IActionResult> AddCursoAsync([FromBody] Curso novoCurso)
         {
             try
             {
-                // Consulta com base no curso
-                List<Curso> lista = await _context.Cursos.Where(form => form.nomeCurso.Contains(nomeCurso)).ToListAsync();
-                return Ok(lista);
+                Curso curso = await _cursoService.AddCursoAsync(novoCurso);
+                return Ok(curso);
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
-
-
-
-
-
-
-
-
 
     }
 }

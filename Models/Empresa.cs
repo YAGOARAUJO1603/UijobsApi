@@ -1,20 +1,45 @@
-using System;
-using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
-namespace UijobsApi.Models
+namespace UIJobsAPI.Models
 {
+    [PrimaryKey(nameof(idEmpresa))]
+    [Index(/*nameof(idTokenFirebase),*/nameof(idPortes))]
     public class Empresa
     {
-        [Key]
+        [NotNull]
+        [Required]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
         public int idEmpresa { get; set; }
-        public string cnpj { get; set; }
-        public string razaoSocial { get; set; }
-        public string nomeSocial { get; set; }
-        public int qtdFuncionarios { get; set; }
-        public string porte { get; set; }
-        public string CEP { get; set; }
+/*      
+        [ForeignKey(nameof(idTokenFirebase))]
+        [NotNull]
+        [Required]
+        public TokenFirebase idTokenFirebase { get; set; }
+*/
+        [NotNull]
+        [Required]
+        public int idPortes { get; set; }
+
+        [NotNull]
+        [Required]
+        [StringLength(18)]
+        public String cnpj { get; set; }
+
+        [NotNull]
+        [StringLength(50)]
+        [Required]
+        public String razaoSocial { get; set; }
+
+        [NotNull]
+        [StringLength(30)]
+        [Required]
+        public String nomeFantasia { get; set; }
+
+        [ForeignKey("idPortes")]
+        public Porte Porte { get; set; }
     }
 }
