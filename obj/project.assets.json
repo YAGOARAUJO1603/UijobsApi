@@ -3933,11 +3933,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\etechas\\Desktop\\UijobsApi\\UijobsApi.csproj",
+      "projectUniqueName": "a:\\3DS\\Projetos\\UijobsApi\\UijobsApi.csproj",
       "projectName": "UijobsApi",
-      "projectPath": "c:\\Users\\etechas\\Desktop\\UijobsApi\\UijobsApi.csproj",
+      "projectPath": "a:\\3DS\\Projetos\\UijobsApi\\UijobsApi.csproj",
       "packagesPath": "C:\\Users\\etechas\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\etechas\\Desktop\\UijobsApi\\obj\\",
+      "outputPath": "a:\\3DS\\Projetos\\UijobsApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
