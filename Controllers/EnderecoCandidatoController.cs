@@ -48,7 +48,7 @@ namespace UijobsApi.Controllers
            
         }
         [HttpPost]
-        public async Task<IActionResult> AddEnderecoCandidatoAsync( EnderecoCandidato novoEnderecoCandidato)
+        public async Task<IActionResult> AddEnderecoCandidatoAsync(EnderecoCandidato novoEnderecoCandidato)
         {
             try
             {
@@ -61,6 +61,8 @@ namespace UijobsApi.Controllers
                 return ex.GetResponse();
 
             }
+
+            
         }
 
         [HttpDelete("{id}")]

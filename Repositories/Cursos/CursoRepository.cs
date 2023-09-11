@@ -30,5 +30,21 @@ namespace UIJobsAPI.Repositories.Cursos
             return novoCurso;
         }
 
+        public async Task<Curso> GetCursoByIdAsync(int id)
+        {
+            Curso curso = await _context.Cursos.FirstOrDefaultAsync(curso => curso.idCurso == id);
+            return curso;
+        }
+
+        public async Task DeleteCursoByIdAsync(int id)
+        {
+            var cursoParaExcluir = await _context.Cursos.FirstOrDefaultAsync(curso => curso.idCurso == id);
+
+            if (cursoParaExcluir != null)
+            {
+                _context.Cursos.Remove(cursoParaExcluir);
+                await _context.SaveChangesAsync();
+            }
+        }
     }
 }

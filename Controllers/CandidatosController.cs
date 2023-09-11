@@ -23,6 +23,8 @@ namespace UIJobsAPI.Controllers
             _candidatoService = candidatoService;
             _candidatoRepository = candidatoRepository;
         }
+
+        
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAllAsync()
         {

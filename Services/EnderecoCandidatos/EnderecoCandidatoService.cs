@@ -38,16 +38,19 @@ namespace UijobsApi.Services.EnderecoCandidatos
             return await _enderecoCandidatoRepository.AddEnderecoCandidatosAsync(novoEnderecoCandidato);
         }
 
-        public Task DeleteEnderecoCandidatoAsync(int id)
+        public async Task DeleteEnderecoCandidatoByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            // Você pode adicionar lógica de negócios adicional aqui, se necessário.
+
+            // Chame o método de exclusão do repositório.
+            await _enderecoCandidatoRepository.DeleteEnderecoCandidatoAsync(id);
         }
 
         public async Task<EnderecoCandidato> GetEnderecoCandidatosByIdAsync(int id)
         {
             EnderecoCandidato enderecoCandidato = await _enderecoCandidatoRepository.GetEnderecoCandidatosByIdAsync(id);
 
-            if( enderecoCandidato == null)
+            if (enderecoCandidato == null)
             {
                 throw new NotFoundException("Endereco Candidato");
             }

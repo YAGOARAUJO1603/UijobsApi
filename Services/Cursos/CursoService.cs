@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 using UIJobsAPI.Repositories.Candidatos;
 using UIJobsAPI.Repositories.Cursos;
@@ -23,6 +24,27 @@ namespace UIJobsAPI.Services.Cursos
         public async Task<Curso> AddCursoAsync([FromBody] Curso novoCurso)
         {
             return await _cursoRepository.AddCursoAsync(novoCurso);
+        }
+
+
+        public async Task<Curso> GetCursoByIdAsync(int id)
+        {
+            Curso curso = await _cursoRepository.GetCursoByIdAsync(id);
+
+            if (curso == null)
+            {
+                throw new NotFoundException("Candidato");
+            }
+
+            return curso;
+        }
+
+        public async Task DeleteCursoByIdAsync(int id)
+        {
+            // Você pode adicionar lógica de negócios adicional aqui, se necessário.
+
+            // Chame o método de exclusão do repositório.
+            await _cursoRepository.DeleteCursoByIdAsync(id);
         }
     }
 }

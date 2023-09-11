@@ -36,6 +36,13 @@ namespace UijobsApi.Repositories.EnderecoCandidatos
             }
         }
 
+        public async Task<IEnumerable<EnderecoCandidato>> GetAllEnderecoCandidato()
+        {
+            IEnumerable<EnderecoCandidato> enderecoCandidatos = await _context.EnderecoCandidato.ToListAsync();
+            return enderecoCandidatos;
+        }
+
+
         public async Task<EnderecoCandidato> GetEnderecoCandidatosByIdAsync(int id)
         {
             EnderecoCandidato enderecoCandidato = await _context.EnderecoCandidato.FirstOrDefaultAsync(e => e.idEnderecoCandidato == id);
