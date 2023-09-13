@@ -3927,23 +3927,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ycont\\.nuget\\packages\\": {},
+    "C:\\Users\\etechas\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ycont\\OneDrive\\Área de Trabalho\\UijobsApi\\UijobsApi.csproj",
+      "projectUniqueName": "a:\\3DS\\Projetos\\UijobsApi\\UijobsApi.csproj",
       "projectName": "UijobsApi",
-      "projectPath": "C:\\Users\\ycont\\OneDrive\\Área de Trabalho\\UijobsApi\\UijobsApi.csproj",
-      "packagesPath": "C:\\Users\\ycont\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ycont\\OneDrive\\Área de Trabalho\\UijobsApi\\obj\\",
+      "projectPath": "a:\\3DS\\Projetos\\UijobsApi\\UijobsApi.csproj",
+      "packagesPath": "C:\\Users\\etechas\\.nuget\\packages\\",
+      "outputPath": "a:\\3DS\\Projetos\\UijobsApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ycont\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\etechas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3952,6 +3952,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4016,7 +4018,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }
