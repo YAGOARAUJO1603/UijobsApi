@@ -17,6 +17,6 @@ namespace UijobsApi.Services.Escolaridades
 
         public Task<Escolaridade> AddEscolaridadeAsync(Escolaridade novaEscolaridade);
 
-        public Task  DeleteEscolaridadeByIdAsync(int id);
+        public Task  DeleteEscolaridadeByIdAsync(Escolaridade id);
     }
 }

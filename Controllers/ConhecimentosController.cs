@@ -1,9 +1,9 @@
-using System;
+    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using UijobsApi.Repositories.Conhecimentos;
+using UijobsApi.DAL.Repositories.Conhecimentos;
 using UijobsApi.Services.Conhecimentos;
 using UIJobsAPI.Data;
 using UIJobsAPI.Exceptions;
@@ -64,6 +64,7 @@ namespace UijobsApi.Controllers
             try
             {
                 Conhecimento conhecimento = await _conhecimentoService.AddConhecimentoAsync(novoConhecimento);
+                await _conhecimentoRepository.Commit();
                 return Created("Conhecimento", conhecimento);
             }
             catch (BaseException ex)
@@ -79,11 +80,12 @@ namespace UijobsApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteConhecimento(int id)
+        public async Task<IActionResult> DeleteConhecimento(Conhecimento id)
         {
             try
             {
                 await _conhecimentoRepository.DeleteConhecimentoByIdAsync(id);
+                await _conhecimentoRepository.Commit();
                 return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
             }
             catch (Exception ex)

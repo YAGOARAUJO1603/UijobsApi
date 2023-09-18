@@ -33,7 +33,9 @@ namespace UIJobsAPI.Models
         public string nomeMae { get; set; }
 
         [ForeignKey("idCurriculo")]
-        public Curriculo Curriculo { get; set; }
+        public int IdCurriculo { get; set; }
+
+        public virtual Curriculo Curriculo { get; set; }
         
 
         /*public static implicit operator Candidato(void v)

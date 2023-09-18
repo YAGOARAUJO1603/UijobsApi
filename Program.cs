@@ -1,8 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using UijobsApi.DAL.Repositories.Candidatos;
+using UijobsApi.DAL.Repositories.Cursos;
 using UIJobsAPI.Data;
-using UIJobsAPI.Repositories.Candidatos;
-using UIJobsAPI.Repositories.Cursos;
-using UIJobsAPI.Repositories.Interfaces;
 using UIJobsAPI.Services.Candidatos;
 using UIJobsAPI.Services.Cursos;
 using UIJobsAPI.Services.Interfaces;

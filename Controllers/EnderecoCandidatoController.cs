@@ -1,18 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using UijobsApi.Repositories.EnderecoCandidatos;
 using UijobsApi.Services.EnderecoCandidatos;
 using UIJobsAPI.Data;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
-using UIJobsAPI.Services.Interfaces;
-using Microsoft.AspNetCore.Http;
-using UIJobsAPI.Repositories.Interfaces;
-using UIJobsAPI.Services.Candidatos;
+using UijobsApi.DAL.Repositories.EnderecoCandidatos;
 
 namespace UijobsApi.Controllers
 {
@@ -66,7 +57,7 @@ namespace UijobsApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEnderecoCandidatoAsync(int id)
+        public async Task<IActionResult> DeleteEnderecoCandidatoAsync(EnderecoCandidato id)
         {
             try
             {

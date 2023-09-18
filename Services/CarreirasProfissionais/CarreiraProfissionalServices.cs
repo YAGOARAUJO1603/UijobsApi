@@ -1,14 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using UijobsApi.Repositories.CarreirasProfissionais;
-using UIJobsAPI.Data;
 using UIJobsAPI.Models;
-using UIJobsAPI.Repositories.Interfaces;
 using UIJobsAPI.Exceptions;
-
+using UijobsApi.DAL.Repositories.CarreirasProfissionais;
 
 namespace UijobsApi.Services.CarreirasProfissionais
 {
@@ -88,7 +80,7 @@ namespace UijobsApi.Services.CarreirasProfissionais
 
         }
 
-          public Task DeleteCarreiraProfissionalAsync(int id)
+          public Task DeleteCarreiraProfissionalAsync(CarreiraProfissional id)
         {
             throw new NotImplementedException();
         }

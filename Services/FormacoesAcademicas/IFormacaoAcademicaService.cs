@@ -13,7 +13,7 @@ namespace UijobsApi.Services.FormacoesAcademicas
         public Task<FormacaoAcademica> GetFormacoesAcademicasByIdAsync(int id);
         public Task<FormacaoAcademica> AddFormacoesAcademicasAsync(FormacaoAcademica novaFormacaoAcademica);
 
-        public Task DeleteFormacoesAcademicasByIdAsync(int id);
+        public Task DeleteFormacoesAcademicasByIdAsync(FormacaoAcademica id);
 
     }
 }

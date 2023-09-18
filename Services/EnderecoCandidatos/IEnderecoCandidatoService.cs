@@ -10,6 +10,6 @@ namespace UijobsApi.Services.EnderecoCandidatos
     {
         Task<EnderecoCandidato> GetEnderecoCandidatosByIdAsync(int id);
         Task<EnderecoCandidato> AddEnderecoCandidatosAsync(EnderecoCandidato novoEnderecoCandidato);
-        Task DeleteEnderecoCandidatoByIdAsync(int id);
+        Task DeleteEnderecoCandidatoByIdAsync(EnderecoCandidato id);
     }
 }

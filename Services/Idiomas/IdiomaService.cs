@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using UijobsApi.Repositories.Idiomas;
+using UijobsApi.DAL.Repositories.Idiomas;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
@@ -35,7 +35,7 @@ namespace UijobsApi.Services.Idiomas
             return await _idiomaRepository.AddIdiomaAsync(novoIdioma);
         }
 
-        public async Task DeleteIdiomaByIdAsync(int id)
+        public async Task DeleteIdiomaByIdAsync(Idioma id)
         {
             // Você pode adicionar lógica de negócios adicional aqui, se necessário.
 

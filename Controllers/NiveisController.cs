@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using UijobsApi.Repositories.Niveis;
 using UijobsApi.Services.Niveis;
 using UIJobsAPI.Data;
 using UIJobsAPI.Models;
 using UIJobsAPI.Exceptions;
-
+using UijobsApi.DAL.Repositories.Niveis;
 
 namespace UijobsApi.Controllers
 {

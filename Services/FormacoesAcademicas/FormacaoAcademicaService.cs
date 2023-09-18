@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using UijobsApi.Repositories.FormacoesAcademicas;
+using UijobsApi.DAL.Repositories.FormacoesAcademicas;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
@@ -35,7 +35,7 @@ namespace UijobsApi.Services.FormacoesAcademicas
             return await _formacaoAcademicaRepository.AddFormacoesAcademicasAsync(novaFormacaoAcademica);
         }
 
-        public async Task DeleteFormacoesAcademicasByIdAsync(int id)
+        public async Task DeleteFormacoesAcademicasByIdAsync(FormacaoAcademica id)
         {
             // Você pode adicionar lógica de negócios adicional aqui, se necessário.
 

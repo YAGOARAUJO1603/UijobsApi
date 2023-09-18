@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using UijobsApi.Repositories.Escolaridades;
+using UijobsApi.DAL.Repositories.Escolaridades;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
@@ -35,7 +35,7 @@ namespace UijobsApi.Services.Escolaridades
             return await _escolaridadeRepository.AddEscolaridadeAsync(novaEscolaridade);
         }
 
-        public async Task DeleteEscolaridadeByIdAsync(int id)
+        public async Task DeleteEscolaridadeByIdAsync(Escolaridade id)
         {
             // Você pode adicionar lógica de negócios adicional aqui, se necessário.
 

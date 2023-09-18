@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using UijobsApi.Repositories.Conhecimentos;
+using UijobsApi.DAL.Repositories.Conhecimentos;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
@@ -35,7 +35,7 @@ namespace UijobsApi.Services.Conhecimentos
         }
 
 
-        public async Task DeleteConhecimentoByIdAsync(int id)
+        public async Task DeleteConhecimentoByIdAsync(Conhecimento id)
         {
             // Você pode adicionar lógica de negócios adicional aqui, se necessário.
 

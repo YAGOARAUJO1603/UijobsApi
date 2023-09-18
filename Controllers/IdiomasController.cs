@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using UijobsApi.Repositories.Idiomas;
+using UijobsApi.DAL.Repositories.Idiomas;
 using UijobsApi.Services.Idiomas;
 using UIJobsAPI.Data;
 using UIJobsAPI.Exceptions;
@@ -80,7 +80,7 @@ namespace UijobsApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteIdioma(int id)
+        public async Task<IActionResult> DeleteIdioma(Idioma id)
         {
             try
             {

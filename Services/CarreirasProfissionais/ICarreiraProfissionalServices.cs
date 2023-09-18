@@ -14,6 +14,6 @@ namespace UijobsApi.Services.CarreirasProfissionais
         Task<CarreiraProfissional> AddCarreiraProfissionalAsync(CarreiraProfissional novaCarreiraProfissional);
 
         Task<CarreiraProfissional> PutCarreiraProfissionalAsync(int id, CarreiraProfissional carreiraProfissionalAtualizada);
-        Task DeleteCarreiraProfissionalAsync(int id);
+        Task DeleteCarreiraProfissionalAsync(CarreiraProfissional id);
     }
 }

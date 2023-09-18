@@ -8,9 +8,11 @@ namespace UIJobsAPI.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int idBeneficio { get; set; }
+        [Column("idBeneficiario")]
+        public int IdBeneficio { get; set; }
 
         [Required]
-        public BeneficioEnum nomeBeneficio { get; set; }
+        [Column("nomeBeneficiario")]
+        public BeneficioEnum NomeBeneficio { get; set; }
     }
 }

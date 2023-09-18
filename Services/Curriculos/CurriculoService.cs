@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using UijobsApi.Repositories.Curriculos;
+using UijobsApi.DAL.Repositories.Curriculos;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
@@ -34,7 +34,7 @@ namespace UijobsApi.Services.Curriculos
             return await _curriculoRepository.AddCurriculoAsync(novoCurriculo);
         }
 
-        public async Task DeleteCurriculoByIdAsync(int id)
+        public async Task DeleteCurriculoByIdAsync(Curriculo id)
         {
             // Você pode adicionar lógica de negócios adicional aqui, se necessário.
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using UijobsApi.Repositories.CarreirasProfissionais;
+using UijobsApi.DAL.Repositories.CarreirasProfissionais;
 using UijobsApi.Services.CarreirasProfissionais;
 using UIJobsAPI.Data;
 using UIJobsAPI.Exceptions;
@@ -78,7 +78,7 @@ namespace UijobsApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCarreiraProfissional(int id)
+        public async Task<IActionResult> DeleteCarreiraProfissional(CarreiraProfissional id)
         {
             try
             {
@@ -91,26 +91,6 @@ namespace UijobsApi.Controllers
             }
         }
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult<CarreiraProfissional>> PutCarreiraProfissionalAsync(int id, CarreiraProfissional carreiraProfissionalAtualizada)
-        {
-            try
-            {
-                var carreiraProfissionalAtualizadaResult = await _carreiraProfissionalServices.PutCarreiraProfissionalAsync(id, carreiraProfissionalAtualizada);
-
-                return carreiraProfissionalAtualizadaResult != null
-                    ? Ok(carreiraProfissionalAtualizadaResult)
-                    : NotFound("A carreira profissional com o ID fornecido não foi encontrada.");
-            }
-            catch (ArgumentException ex)
-            {
-                return BadRequest(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, "Ocorreu um erro interno no servidor.");
-            }
-        }
 
 
 

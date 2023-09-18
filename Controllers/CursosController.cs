@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using UijobsApi.DAL.Repositories.Cursos;
 using UIJobsAPI.Data;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
-using UIJobsAPI.Repositories.Cursos;
 using UIJobsAPI.Services.Candidatos;
 using UIJobsAPI.Services.Cursos;
 using UIJobsAPI.Services.Interfaces;
@@ -74,7 +74,7 @@ namespace UIJobsAPI.Controllers
 
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCurso(int id)
+        public async Task<IActionResult> DeleteCurso(Curso id)
         {
             try
             {

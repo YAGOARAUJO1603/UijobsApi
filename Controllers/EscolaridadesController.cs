@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using UijobsApi.Repositories.Escolaridades;
+using UijobsApi.DAL.Repositories.Escolaridades;
 using UijobsApi.Services.Escolaridades;
 using UIJobsAPI.Data;
 using UIJobsAPI.Exceptions;
@@ -84,7 +84,7 @@ namespace UijobsApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEscolaridade(int id)
+        public async Task<IActionResult> DeleteEscolaridade(Escolaridade id)
         {
             try
             {

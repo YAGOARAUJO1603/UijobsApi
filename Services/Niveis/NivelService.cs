@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using UijobsApi.Repositories.Niveis;
+using UijobsApi.DAL.Repositories.Niveis;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 

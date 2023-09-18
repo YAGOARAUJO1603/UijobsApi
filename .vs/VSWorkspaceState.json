@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Repositories",
-    "\\Repositories\\Candidatos"
+    "\\DAL\\Repositories\\Idiomas",
+    "\\DAL\\Unit of Work"
   ],
-  "SelectedNode": "\\Repositories",
+  "SelectedNode": "\\UijobsApi.sln",
   "PreviewInSolutionExplorer": false
 }

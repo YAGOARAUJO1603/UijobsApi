@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http.HttpResults;
-using UijobsApi.Repositories.EnderecoCandidatos;
+using UijobsApi.DAL.Repositories.EnderecoCandidatos;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
@@ -38,13 +38,15 @@ namespace UijobsApi.Services.EnderecoCandidatos
             return await _enderecoCandidatoRepository.AddEnderecoCandidatosAsync(novoEnderecoCandidato);
         }
 
-        public async Task DeleteEnderecoCandidatoByIdAsync(int id)
+        public async Task DeleteEnderecoCandidatoByIdAsync(EnderecoCandidato id)
         {
             // Você pode adicionar lógica de negócios adicional aqui, se necessário.
 
             // Chame o método de exclusão do repositório.
             await _enderecoCandidatoRepository.DeleteEnderecoCandidatoAsync(id);
         }
+
+
 
         public async Task<EnderecoCandidato> GetEnderecoCandidatosByIdAsync(int id)
         {

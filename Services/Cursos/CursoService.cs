@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using UijobsApi.DAL.Repositories.Cursos;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
-using UIJobsAPI.Repositories.Candidatos;
-using UIJobsAPI.Repositories.Cursos;
-using UIJobsAPI.Repositories.Interfaces;
 
 namespace UIJobsAPI.Services.Cursos
 {
@@ -39,12 +37,14 @@ namespace UIJobsAPI.Services.Cursos
             return curso;
         }
 
-        public async Task DeleteCursoByIdAsync(int id)
+        public async Task DeleteCursoByIdAsync(Curso id)
         {
             // Você pode adicionar lógica de negócios adicional aqui, se necessário.
 
             // Chame o método de exclusão do repositório.
             await _cursoRepository.DeleteCursoByIdAsync(id);
         }
+
+       
     }
 }

@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections;
+using UijobsApi.DAL.Repositories.Candidatos;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
-using UIJobsAPI.Repositories.Interfaces;
 using UIJobsAPI.Services.Interfaces;
 
 namespace UIJobsAPI.Services.Candidatos
@@ -47,7 +47,7 @@ namespace UIJobsAPI.Services.Candidatos
             return candidato;
         }
 
-        public async Task DeleteCandidatoByIdAsync(int id)
+        public async Task DeleteCandidatoByIdAsync(Candidato id)
         {
             // Você pode adicionar lógica de negócios adicional aqui, se necessário.
 

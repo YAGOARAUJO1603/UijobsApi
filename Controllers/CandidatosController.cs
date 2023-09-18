@@ -1,10 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using UijobsApi.DAL.Repositories.Candidatos;
 using UIJobsAPI.Data;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
-using UIJobsAPI.Repositories.Interfaces;
-using UIJobsAPI.Services.Candidatos;
 using UIJobsAPI.Services.Interfaces;
 
 namespace UIJobsAPI.Controllers
@@ -74,7 +72,7 @@ namespace UIJobsAPI.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCandidato(int id)
+        public async Task<IActionResult> DeleteCandidato(Candidato id)
         {
             try
             {
