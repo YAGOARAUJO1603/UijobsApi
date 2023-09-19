@@ -49,11 +49,11 @@ namespace UIJobsAPI.Data
                 .WithMany()
                 .HasForeignKey(bv => bv.idVagas);
 
-            // Mapeamento Candidato
+/*            // Mapeamento Candidato
             modelBuilder.Entity<Candidato>()
                 .HasOne(c => c.Curriculo)
                 .WithMany()
-                .HasForeignKey(c => c.idCurriculo);
+                .HasForeignKey(c => c.idCurriculo);*/
 
             // Mapeamento CarreiraProfissional
             modelBuilder.Entity<CarreiraProfissional>()

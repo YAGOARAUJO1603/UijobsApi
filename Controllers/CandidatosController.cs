@@ -72,11 +72,11 @@ namespace UIJobsAPI.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCandidato(Candidato id)
+        public async Task<IActionResult> DeleteCandidato(int id)
         {
             try
             {
-                await _candidatoRepository.DeleteCandidatoByIdAsync(id);
+                await _candidatoService.DeleteCandidatoByIdAsync(id);
                 return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
             }
             catch (Exception ex)

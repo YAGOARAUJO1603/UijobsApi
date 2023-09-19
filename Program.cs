@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using UijobsApi.DAL.Repositories.Candidatos;
 using UijobsApi.DAL.Repositories.Cursos;
+using UijobsApi.DAL.Unit_of_Work;
 using UIJobsAPI.Data;
 using UIJobsAPI.Services.Candidatos;
 using UIJobsAPI.Services.Cursos;
@@ -21,6 +22,7 @@ builder.Services.AddScoped<ICandidatoService, CandidatoService>();
 builder.Services.AddScoped<ICandidatoRepository, CandidatoRepository>();
 builder.Services.AddScoped<ICursoRepository, CursoRepository>();
 builder.Services.AddScoped<ICursoService, CursoService>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

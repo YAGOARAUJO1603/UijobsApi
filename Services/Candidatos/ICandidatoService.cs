@@ -9,6 +9,6 @@ namespace UIJobsAPI.Services.Interfaces
         public Task<Candidato> GetCandidatoByIdAsync(int id);
         public Task<Candidato> AddCandidatoAsync(Candidato novoCandidato);
 
-        public Task DeleteCandidatoByIdAsync(Candidato id);
+        public Task DeleteCandidatoByIdAsync(int id);
     }
 }

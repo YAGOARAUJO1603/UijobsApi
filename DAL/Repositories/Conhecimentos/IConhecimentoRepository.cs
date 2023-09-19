@@ -7,7 +7,7 @@ using UIJobsAPI.Models;
 
 namespace UijobsApi.DAL.Repositories.Conhecimentos
 {
-    public interface IConhecimentoRepository : IUnitOfWork
+    public interface IConhecimentoRepository
     {
         public Task<IEnumerable<Conhecimento>> GetAllConhecimentoAsync();
         //Listar todos

@@ -64,7 +64,6 @@ namespace UijobsApi.Controllers
             try
             {
                 Conhecimento conhecimento = await _conhecimentoService.AddConhecimentoAsync(novoConhecimento);
-                await _conhecimentoRepository.Commit();
                 return Created("Conhecimento", conhecimento);
             }
             catch (BaseException ex)
@@ -85,7 +84,6 @@ namespace UijobsApi.Controllers
             try
             {
                 await _conhecimentoRepository.DeleteConhecimentoByIdAsync(id);
-                await _conhecimentoRepository.Commit();
                 return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
             }
             catch (Exception ex)

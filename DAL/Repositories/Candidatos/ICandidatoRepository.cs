@@ -13,6 +13,6 @@ namespace UijobsApi.DAL.Repositories.Candidatos
 
         public Task<Candidato> AddCandidatoAsync(Candidato novoCandidato);
 
-        public Task DeleteCandidatoByIdAsync(Candidato id);
+        public Task DeleteCandidatoByIdAsync(Candidato candidato);
     }
 }

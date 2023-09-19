@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Numerics;
+using UijobsApi.DAL.Unit_of_Work;
 using UIJobsAPI.Data;
 using UIJobsAPI.Models;
 using UIJobsAPI.Models.Enuns;
@@ -10,10 +11,12 @@ namespace UijobsApi.DAL.Repositories.Conhecimentos
     public class ConhecimentoRepository : IConhecimentoRepository
     {
         private readonly DataContext _context;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public ConhecimentoRepository(DataContext context)
+        public ConhecimentoRepository(DataContext context, IUnitOfWork unitOfWork)
         {
             _context = context;
+            _unitOfWork = unitOfWork;
         }
 
         public Task SaveChangesAsync()
@@ -30,6 +33,7 @@ namespace UijobsApi.DAL.Repositories.Conhecimentos
         public async Task DeleteConhecimentoByIdAsync(Conhecimento id)
         {
             _context.Conhecimentos.Remove(id);
+            
         }
 
         public async Task<IEnumerable<Conhecimento>> GetAllConhecimentoAsync()

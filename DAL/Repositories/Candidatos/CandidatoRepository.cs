@@ -39,9 +39,9 @@ namespace UijobsApi.DAL.Repositories.Candidatos
 
         }
 
-        public async Task DeleteCandidatoByIdAsync(Candidato id)
+        public async Task DeleteCandidatoByIdAsync(Candidato candidato)
         {
-            _context.Candidato.Remove(id);
+            _context.Candidato.Remove(candidato);
         }
 
 

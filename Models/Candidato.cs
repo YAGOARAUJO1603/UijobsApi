@@ -13,8 +13,6 @@ namespace UIJobsAPI.Models
         [Required]
         public int idTokenFirebase { get; set; }
 */
-        [Required]
-        public int idCurriculo { get; set; }
 
         [Required]
         [MaxLength(60)]
@@ -31,11 +29,11 @@ namespace UIJobsAPI.Models
         [Required]
         [MaxLength(100)]
         public string nomeMae { get; set; }
-
+/*
         [ForeignKey("idCurriculo")]
         public int IdCurriculo { get; set; }
 
-        public virtual Curriculo Curriculo { get; set; }
+        public virtual Curriculo Curriculo { get; set; }*/
         
 
         /*public static implicit operator Candidato(void v)
