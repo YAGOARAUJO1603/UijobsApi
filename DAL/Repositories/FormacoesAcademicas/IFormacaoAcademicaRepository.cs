@@ -13,6 +13,6 @@ namespace UijobsApi.DAL.Repositories.FormacoesAcademicas
         public Task<FormacaoAcademica> GetFormacoesAcademicasByIdAsync(int id);
         public Task<FormacaoAcademica> AddFormacoesAcademicasAsync(FormacaoAcademica novaFormacaoAcademica);
 
-        public Task DeleteFormacoesAcademicasByIdAsync(FormacaoAcademica id);
+        public Task DeleteFormacoesAcademicasByIdAsync(FormacaoAcademica formacaoAcademica);
     }
 }

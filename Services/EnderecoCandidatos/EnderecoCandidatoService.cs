@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http.HttpResults;
 using UijobsApi.DAL.Repositories.EnderecoCandidatos;
+using UijobsApi.DAL.Unit_of_Work;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
@@ -14,36 +15,38 @@ namespace UijobsApi.Services.EnderecoCandidatos
     {
 
         private readonly IEnderecoCandidatoRepository _enderecoCandidatoRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public EnderecoCandidatoService(IEnderecoCandidatoRepository enderecoCandidatoRepository)
+        public EnderecoCandidatoService(IEnderecoCandidatoRepository enderecoCandidatoRepository, IUnitOfWork unitOfWork)
         {
             _enderecoCandidatoRepository = enderecoCandidatoRepository;
+            _unitOfWork = unitOfWork;
         }
 
 
         public async Task<EnderecoCandidato> AddEnderecoCandidatosAsync(EnderecoCandidato novoEnderecoCandidato)
         {
-            // Realize a validação usando DataAnnotations
-
-            var validationContext = new ValidationContext(novoEnderecoCandidato, null, null);
-            var validationResults = new List<ValidationResult>();
-
-            if (!Validator.TryValidateObject(novoEnderecoCandidato, validationContext, validationResults, true))
+            EnderecoCandidato enderecoCandidatoExistente = await _enderecoCandidatoRepository.GetEnderecoCandidatosByIdAsync(novoEnderecoCandidato.idEnderecoCandidato);
+            if (enderecoCandidatoExistente != null && enderecoCandidatoExistente.Equals(novoEnderecoCandidato))
             {
-                // Se os dados não forem válidos, você pode lançar uma exceção ou tratar o erro de outra forma.
-                throw new ValidationException("Os dados do endereço não são válidos.");
+                // bad request exception \/
+                throw new Exception("Já existe um candidato com esse id endereco Cadastrado.");
             }
-
-            // Se os dados forem válidos, você pode continuar com a adição do endereço.
-            return await _enderecoCandidatoRepository.AddEnderecoCandidatosAsync(novoEnderecoCandidato);
+            EnderecoCandidato enderecoCandidato = await _enderecoCandidatoRepository.AddEnderecoCandidatosAsync(novoEnderecoCandidato);
+            await _unitOfWork.SaveChangesAsync();
+            return enderecoCandidato;
         }
 
-        public async Task DeleteEnderecoCandidatoByIdAsync(EnderecoCandidato id)
+        public async Task DeleteEnderecoCandidatoByIdAsync(int id)
         {
-            // Você pode adicionar lógica de negócios adicional aqui, se necessário.
+            EnderecoCandidato enderecoCandidato = await _enderecoCandidatoRepository.GetEnderecoCandidatosByIdAsync(id);
 
-            // Chame o método de exclusão do repositório.
-            await _enderecoCandidatoRepository.DeleteEnderecoCandidatoAsync(id);
+            if (enderecoCandidato is null)
+            {
+                throw new NotFoundException("Endereco com id não existe");
+            }
+            _enderecoCandidatoRepository.DeleteEnderecoCandidatoAsync(enderecoCandidato);
+            await _unitOfWork.SaveChangesAsync();
         }
 
 

@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using UijobsApi.DAL.Repositories.Escolaridades;
+using UijobsApi.DAL.Unit_of_Work;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
@@ -12,36 +13,40 @@ namespace UijobsApi.Services.Escolaridades
     public class EscolaridadeService : IEscolaridadeService
     {
         private readonly IEscolaridadeRepository _escolaridadeRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public EscolaridadeService(IEscolaridadeRepository escolaridadeRepository)
+        public EscolaridadeService(IEscolaridadeRepository escolaridadeRepository, IUnitOfWork unitOfWork)
         {
             _escolaridadeRepository = escolaridadeRepository;
+            _unitOfWork = unitOfWork;
         }
 
 
 
         public async Task<Escolaridade> AddEscolaridadeAsync(Escolaridade novaEscolaridade)
         {
-            var validationContext = new ValidationContext(novaEscolaridade, null, null);
-            var validationResults = new List<ValidationResult>();
-
-            if (!Validator.TryValidateObject(novaEscolaridade, validationContext, validationResults, true))
+            Escolaridade escolaridadeExistente = await _escolaridadeRepository.GetEscolaridadeByIdAsync(novaEscolaridade.idEscolaridade);
+            if (escolaridadeExistente != null && escolaridadeExistente.Equals(novaEscolaridade))
             {
-                // Se os dados não forem válidos, você pode lançar uma exceção ou tratar o erro de outra forma.
-                throw new ValidationException("Os dados da escolaridade não são válidos.");
+                // bad request exception \/
+                throw new Exception("Já existe uma escolaridade cadastrada com esse Id.");
             }
-
-            // Se os dados forem válidos, você pode continuar com a adição da escolaridade.
-            return await _escolaridadeRepository.AddEscolaridadeAsync(novaEscolaridade);
+            Escolaridade escolaridade = await _escolaridadeRepository.AddEscolaridadeAsync(novaEscolaridade);
+            await _unitOfWork.SaveChangesAsync();
+            return escolaridade;
         }
 
-        public async Task DeleteEscolaridadeByIdAsync(Escolaridade id)
+        public async Task DeleteEscolaridadeByIdAsync(int id)
         {
-            // Você pode adicionar lógica de negócios adicional aqui, se necessário.
+            Escolaridade escolaridade = await _escolaridadeRepository.GetEscolaridadeByIdAsync(id);
 
-            // Chame o método de exclusão do repositório.
-            await _escolaridadeRepository.DeleteEscolaridadeByIdAsync(id);  
-            
+            if (escolaridade is null)
+            {
+                throw new NotFoundException("Escolaridade com id não existe");
+            }
+            _escolaridadeRepository.DeleteEscolaridadeByIdAsync(escolaridade);
+            await _unitOfWork.SaveChangesAsync();
+
         }
 
         public async Task<IEnumerable<Escolaridade>> GetAllEscolaridadeAsync()

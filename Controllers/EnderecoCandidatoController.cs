@@ -57,11 +57,11 @@ namespace UijobsApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEnderecoCandidatoAsync(EnderecoCandidato id)
+        public async Task<IActionResult> DeleteEnderecoCandidatoAsync(int id)
         {
             try
             {
-                await _enderecoCandidatoRepository.DeleteEnderecoCandidatoAsync(id);
+                await _enderecoCandidatoService.DeleteEnderecoCandidatoByIdAsync(id);
                 return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
             }
             catch (Exception ex)

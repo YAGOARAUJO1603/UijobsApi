@@ -66,11 +66,11 @@ namespace UijobsApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCurriculo(Curriculo id)
+        public async Task<IActionResult> DeleteCurriculo(int id)
         {
             try
             {
-                await _curriculoRepository.DeleteCurriculoByIdAsync(id);
+                await _curriculoService.DeleteCurriculoByIdAsync(id);
                 return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
             }
             catch (Exception ex)

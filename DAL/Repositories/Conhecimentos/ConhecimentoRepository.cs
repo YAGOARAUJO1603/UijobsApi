@@ -30,9 +30,9 @@ namespace UijobsApi.DAL.Repositories.Conhecimentos
             return novoConhecimento;
         }
 
-        public async Task DeleteConhecimentoByIdAsync(Conhecimento id)
+        public async Task DeleteConhecimentoByIdAsync(Conhecimento conhecimento)
         {
-            _context.Conhecimentos.Remove(id);
+            _context.Conhecimentos.Remove(conhecimento);
             
         }
 

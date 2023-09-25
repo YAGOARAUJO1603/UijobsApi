@@ -10,6 +10,6 @@ namespace UijobsApi.DAL.Repositories.CarreirasProfissionais
     {
         Task<CarreiraProfissional> GetCarreiraProfissionalByIdAsync(int id);
         Task<CarreiraProfissional> AddCarreiraProfissionalAsync(CarreiraProfissional AddCarreiraProfissional);
-        Task DeleteCarreiraProfissionalAsync(CarreiraProfissional id);
+        Task DeleteCarreiraProfissionalAsync(CarreiraProfissional carreiraProfissional);
     }
 }

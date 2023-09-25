@@ -23,9 +23,9 @@ namespace UijobsApi.DAL.Repositories.Curriculos
             return novoCurriculo;
         }
 
-        public async Task DeleteCurriculoByIdAsync(Curriculo id)
+        public async Task DeleteCurriculoByIdAsync(Curriculo curriculo)
         {
-            _context.Curriculo.Remove(id);
+            _context.Curriculo.Remove(curriculo);
         }
 
         public async Task<Curriculo> GetCurriculoByIdAsync(int id)

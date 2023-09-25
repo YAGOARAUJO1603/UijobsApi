@@ -23,9 +23,9 @@ namespace UijobsApi.DAL.Repositories.FormacoesAcademicas
             return novaFormacaoAcademica;
         }
 
-        public async Task DeleteFormacoesAcademicasByIdAsync(FormacaoAcademica id)
+        public async Task DeleteFormacoesAcademicasByIdAsync(FormacaoAcademica formacaoAcademica)
         {
-            _context.FormacaoAcademica.Remove(id);
+            _context.FormacaoAcademica.Remove(formacaoAcademica);
         }
 
         public async Task<IEnumerable<FormacaoAcademica>> GetAllFormacoesAcademicasAsync()

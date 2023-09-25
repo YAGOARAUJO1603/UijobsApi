@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using UijobsApi.DAL.Repositories.FormacoesAcademicas;
+using UijobsApi.DAL.Unit_of_Work;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
@@ -13,34 +14,38 @@ namespace UijobsApi.Services.FormacoesAcademicas
     {
 
         private readonly IFormacaoAcademicaRepository _formacaoAcademicaRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public FormacaoAcademicaService(IFormacaoAcademicaRepository formacaoAcademicaRepository)
+        public FormacaoAcademicaService(IFormacaoAcademicaRepository formacaoAcademicaRepository, IUnitOfWork unitOfWork)
         {
             _formacaoAcademicaRepository = formacaoAcademicaRepository;
+            _unitOfWork = unitOfWork;
         }
 
 
         public async Task<FormacaoAcademica> AddFormacoesAcademicasAsync(FormacaoAcademica novaFormacaoAcademica)
         {
-            var validationContext = new ValidationContext(novaFormacaoAcademica, null, null);
-            var validationResults = new List<ValidationResult>();
-
-            if (!Validator.TryValidateObject(novaFormacaoAcademica, validationContext, validationResults, true))
+            FormacaoAcademica formacaoExistente = await _formacaoAcademicaRepository.GetFormacoesAcademicasByIdAsync(novaFormacaoAcademica.idFormacaoAcademica);
+            if (formacaoExistente != null && formacaoExistente.Equals(novaFormacaoAcademica))
             {
-                // Se os dados não forem válidos, você pode lançar uma exceção ou tratar o erro de outra forma.
-                throw new ValidationException("Os dados não são válidos.");
+                // bad request exception \/
+                throw new Exception("Já existe um Id cadastrada com essa formação.");
             }
-
-            // Se os dados forem válidos, você pode continuar com a adição da escolaridade.
-            return await _formacaoAcademicaRepository.AddFormacoesAcademicasAsync(novaFormacaoAcademica);
+            FormacaoAcademica formacaoAcademica = await _formacaoAcademicaRepository.AddFormacoesAcademicasAsync(novaFormacaoAcademica);
+            await _unitOfWork.SaveChangesAsync();
+            return formacaoAcademica;
         }
 
-        public async Task DeleteFormacoesAcademicasByIdAsync(FormacaoAcademica id)
+        public async Task DeleteFormacoesAcademicasByIdAsync(int id)
         {
-            // Você pode adicionar lógica de negócios adicional aqui, se necessário.
+            FormacaoAcademica formacaoAcademica = await _formacaoAcademicaRepository.GetFormacoesAcademicasByIdAsync(id);
 
-            // Chame o método de exclusão do repositório.
-            await _formacaoAcademicaRepository.DeleteFormacoesAcademicasByIdAsync(id);
+            if (formacaoAcademica is null)
+            {
+                throw new NotFoundException("Formação academica com id não existe");
+            }
+            _formacaoAcademicaRepository.DeleteFormacoesAcademicasByIdAsync(formacaoAcademica);
+            await _unitOfWork.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<FormacaoAcademica>> GetAllFormacoesAcademicasAsync()

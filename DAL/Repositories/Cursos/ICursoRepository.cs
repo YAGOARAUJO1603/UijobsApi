@@ -12,6 +12,6 @@ namespace UijobsApi.DAL.Repositories.Cursos
         public Task<Curso> GetCursoByIdAsync(int id);
         public Task<Curso> AddCursoAsync(Curso novoCurso);
 
-        public Task DeleteCursoByIdAsync(Curso id);
+        public Task DeleteCursoByIdAsync(Curso curso);
     }
 }
