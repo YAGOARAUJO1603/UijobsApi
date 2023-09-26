@@ -26,7 +26,11 @@ namespace UijobsApi.Services.EnderecoCandidatos
 
         public async Task<EnderecoCandidato> AddEnderecoCandidatosAsync(EnderecoCandidato novoEnderecoCandidato)
         {
+<<<<<<< HEAD
             EnderecoCandidato enderecoCandidatoExistente = await _enderecoCandidatoRepository.GetEnderecoCandidatosByIdAsync(novoEnderecoCandidato.idCandidato);
+=======
+            EnderecoCandidato enderecoCandidatoExistente = await _enderecoCandidatoRepository.GetEnderecoCandidatosByIdAsync(novoEnderecoCandidato.idEnderecoCandidato);
+>>>>>>> 082cb01ceb7037aaaa31e092c2bf6803ee31e40f
             if (enderecoCandidatoExistente != null && enderecoCandidatoExistente.Equals(novoEnderecoCandidato))
             {
                 // bad request exception \/

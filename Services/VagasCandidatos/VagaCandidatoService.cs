@@ -18,7 +18,11 @@ namespace UijobsApi.Services.VagasCandidatos
 
         public async Task<VagaCandidato> AddVagaCandidatoAsync(VagaCandidato novaVagaCandidato)
         {
+<<<<<<< HEAD
             VagaCandidato vagaCandiExistente = await _vagaCandidatoRepository.GetVagaCandidatoByIdAsync(novaVagaCandidato.idCurriculo);
+=======
+            VagaCandidato vagaCandiExistente = await _vagaCandidatoRepository.GetVagaCandidatoByIdAsync(novaVagaCandidato.idCandidato);
+>>>>>>> 082cb01ceb7037aaaa31e092c2bf6803ee31e40f
             if (vagaCandiExistente != null && vagaCandiExistente.Equals(novaVagaCandidato))
             {
                 // bad request exception \/

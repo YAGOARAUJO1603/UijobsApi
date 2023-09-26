@@ -7,7 +7,11 @@ namespace UijobsApi.DAL.Repositories.CurriculosIdiomas
     public class CurriculoIdiomaRepository : ICurriculoIdiomaRepository
     {
         private readonly DataContext _context;
+<<<<<<< HEAD
         
+=======
+        7
+>>>>>>> 082cb01ceb7037aaaa31e092c2bf6803ee31e40f
         public async Task<CurriculoIdioma> AddCurriculoIdiomaAsync(CurriculoIdioma novoCurriculoIdioma)
         {
             await _context.CurriculoIdiomas.AddAsync(novoCurriculoIdioma);
