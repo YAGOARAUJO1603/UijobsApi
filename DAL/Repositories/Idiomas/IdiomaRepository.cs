@@ -26,13 +26,13 @@ namespace UijobsApi.DAL.Repositories
             //await _context.SaveChangesAsync(); -> UNIT OF WORK
         }
 
-        public async Task DeleteIdiomaByIdAsync(Idioma id)
+        public async Task DeleteIdiomaByIdAsync(Idioma idioma)
         {
             //var idiomaParaExcluir = await _context.Idiomas.FirstOrDefaultAsync(idioma => idioma.idIdiomas == id);
 
             //if (idiomaParaExcluir != null)
             //{
-            _context.Idiomas.Remove(id);
+            _context.Idiomas.Remove(idioma);
             //await _context.SaveChangesAsync(); -> UNIT OF WORK
             //}
         }

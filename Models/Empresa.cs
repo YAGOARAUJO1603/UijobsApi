@@ -39,6 +39,8 @@ namespace UIJobsAPI.Models
         [Required]
         public String nomeFantasia { get; set; }
 
+//Tá Certo?
+
         [ForeignKey("idPortes")]
         public Porte Porte { get; set; }
     }

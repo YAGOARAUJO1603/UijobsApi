@@ -14,7 +14,7 @@ namespace UijobsApi.DAL.Repositories.Curriculos
 
         public Task<Curriculo> AddCurriculoAsync(Curriculo novoCurriculo);
 
-        public Task DeleteCurriculoByIdAsync(Curriculo id);
+        public Task DeleteCurriculoByIdAsync(Curriculo curriculo);
 
     }
 }

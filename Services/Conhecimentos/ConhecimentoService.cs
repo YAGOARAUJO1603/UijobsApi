@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using UijobsApi.DAL.Repositories.Conhecimentos;
+using UijobsApi.DAL.Unit_of_Work;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
@@ -13,34 +14,38 @@ namespace UijobsApi.Services.Conhecimentos
     {
 
         private readonly IConhecimentoRepository _conhecimentoRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public ConhecimentoService(IConhecimentoRepository idiomaRepository)
+        public ConhecimentoService(IConhecimentoRepository idiomaRepository, IUnitOfWork unitOfWork)
         {
             _conhecimentoRepository = idiomaRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<Conhecimento> AddConhecimentoAsync(Conhecimento novoConhecimento)
         {
-            var validationContext = new ValidationContext(novoConhecimento, null, null);
-            var validationResults = new List<ValidationResult>();
-
-            if (!Validator.TryValidateObject(novoConhecimento, validationContext, validationResults, true))
+            Conhecimento conhecimentoExistente = await _conhecimentoRepository.GetConhecimentoByIdAsync(novoConhecimento.idConhecimentos);
+            if (conhecimentoExistente != null && conhecimentoExistente.Equals(novoConhecimento))
             {
-                // Se os dados não forem válidos, você pode lançar uma exceção ou tratar o erro de outra forma.
-                throw new ValidationException("Os dados não são válidos.");
+                // bad request exception \/
+                throw new Exception("Já existe um conhecimento com esse id.");
             }
-
-            // Se os dados forem válidos, você pode continuar com a adição da escolaridade.
-            return await _conhecimentoRepository.AddConhecimentoAsync(novoConhecimento);
+            Conhecimento conhecimento = await _conhecimentoRepository.AddConhecimentoAsync(novoConhecimento);
+            await _unitOfWork.SaveChangesAsync();
+            return conhecimento;
         }
 
 
-        public async Task DeleteConhecimentoByIdAsync(Conhecimento id)
+        public async Task DeleteConhecimentoByIdAsync(int id)
         {
-            // Você pode adicionar lógica de negócios adicional aqui, se necessário.
+            Conhecimento conhecimento = await _conhecimentoRepository.GetConhecimentoByIdAsync(id);
 
-            // Chame o método de exclusão do repositório.
-            await _conhecimentoRepository.DeleteConhecimentoByIdAsync(id);
+            if (conhecimento is null)
+            {
+                throw new NotFoundException("conhecimento com id não existe");
+            }
+            _conhecimentoRepository.DeleteConhecimentoByIdAsync(conhecimento);
+            await _unitOfWork.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<Conhecimento>> GetAllConhecimentoAsync()

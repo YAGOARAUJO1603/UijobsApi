@@ -32,9 +32,9 @@ namespace UijobsApi.DAL.Repositories.Cursos
             return await _context.Cursos.FirstOrDefaultAsync(curso => curso.idCurso == id);
         }
 
-        public async Task DeleteCursoByIdAsync(Curso id)
+        public async Task DeleteCursoByIdAsync(Curso curso)
         {
-           _context.Cursos.Remove(id);
+           _context.Cursos.Remove(curso);
         }
     }
 }

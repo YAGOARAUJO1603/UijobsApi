@@ -14,10 +14,16 @@ namespace UIJobsAPI.Models
         [Column(Order = 1)]
         public int idIdiomas { get; set; }
 
+        //Novo
+        public int idNivel { get; set; }
+
         [ForeignKey("idCurriculo")]
         public Curriculo Curriculo { get; set; }
 
         [ForeignKey("idIdiomas")]
         public Idioma Idiomas { get; set; }
+
+        [ForeignKey("idNivel")]
+        public Nivel Nivel{ get; set; }
     }
 }

@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using UijobsApi.DAL.Repositories.Curriculos;
+using UijobsApi.DAL.Unit_of_Work;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
@@ -12,34 +13,38 @@ namespace UijobsApi.Services.Curriculos
     public class CurriculoService : ICurriculoService
     {
         private readonly ICurriculoRepository _curriculoRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public CurriculoService(ICurriculoRepository idiomaRepository)
+        public CurriculoService(ICurriculoRepository idiomaRepository, IUnitOfWork unitOfWork)
         {
             _curriculoRepository = idiomaRepository;
+            _unitOfWork = unitOfWork;
         }
 
 
         public async Task<Curriculo> AddCurriculoAsync(Curriculo novoCurriculo)
         {
-            var validationContext = new ValidationContext(novoCurriculo, null, null);
-            var validationResults = new List<ValidationResult>();
-
-            if (!Validator.TryValidateObject(novoCurriculo, validationContext, validationResults, true))
+            Curriculo curriculoExistente = await _curriculoRepository.GetCurriculoByIdAsync(novoCurriculo.idCurriculo);
+            if (curriculoExistente != null && curriculoExistente.Equals(novoCurriculo))
             {
-                // Se os dados não forem válidos, você pode lançar uma exceção ou tratar o erro de outra forma.
-                throw new ValidationException("Os dados não são válidos.");
+                // bad request exception \/
+                throw new Exception("Já existe um candidato com esse curriculo cadastrado.");
             }
-
-            // Se os dados forem válidos, você pode continuar com a adição da escolaridade.
-            return await _curriculoRepository.AddCurriculoAsync(novoCurriculo);
+            Curriculo curriculo = await _curriculoRepository.AddCurriculoAsync(novoCurriculo);
+            await _unitOfWork.SaveChangesAsync();
+            return curriculo;
         }
 
-        public async Task DeleteCurriculoByIdAsync(Curriculo id)
+        public async Task DeleteCurriculoByIdAsync(int id)
         {
-            // Você pode adicionar lógica de negócios adicional aqui, se necessário.
+            Curriculo curriculo = await _curriculoRepository.GetCurriculoByIdAsync(id);
 
-            // Chame o método de exclusão do repositório.
-            await _curriculoRepository.DeleteCurriculoByIdAsync(id);
+            if (curriculo is null)
+            {
+                throw new NotFoundException("Curriculo com id não existe");
+            }
+            _curriculoRepository.DeleteCurriculoByIdAsync(curriculo);
+            await _unitOfWork.SaveChangesAsync();
         }
 
         public async Task<Curriculo> GetCurriculoByIdAsync(int id)

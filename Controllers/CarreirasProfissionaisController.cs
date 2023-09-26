@@ -29,19 +29,7 @@ namespace UijobsApi.Controllers
 
 
 
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAllAsync()
-        {
-            try
-            {
-                IEnumerable<CarreiraProfissional> listacarreiraProfissional = await _carreiraProfissionalServices.GetCarreiraProfissionalByIdAsync();
-                return Ok(listacarreiraProfissional);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
+
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(int id)
@@ -78,11 +66,11 @@ namespace UijobsApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCarreiraProfissional(CarreiraProfissional id)
+        public async Task<IActionResult> DeleteCarreiraProfissional(int id)
         {
             try
             {
-                await _carreiraProfissionalRepository.DeleteCarreiraProfissionalAsync(id);
+                await _carreiraProfissionalServices.DeleteCarreiraProfissionalAsync(id);
                 return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
             }
             catch (Exception ex)

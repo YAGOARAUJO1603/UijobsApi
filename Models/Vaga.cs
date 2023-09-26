@@ -39,7 +39,7 @@ namespace UIJobsAPI.Models
         public double? percAderencia { get; set; }
 
         [StringLength(30)]
-        public string escalaHorario { get; set; }
+        public string tempoSemanal { get; set; }
 
         [ForeignKey("idEmpresa")]
         public Empresa Empresa { get; set; }

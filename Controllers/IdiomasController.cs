@@ -80,11 +80,11 @@ namespace UijobsApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteIdioma(Idioma id)
+        public async Task<IActionResult> DeleteIdioma(int id)
         {
             try
             {
-                await _idiomaRepository.DeleteIdiomaByIdAsync(id);
+                await _idiomaService.DeleteIdiomaByIdAsync(id);
                 return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
             }
             catch (Exception ex)

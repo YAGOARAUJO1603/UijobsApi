@@ -17,6 +17,6 @@ namespace UijobsApi.DAL.Repositories.Conhecimentos
 
         public Task<Conhecimento> AddConhecimentoAsync(Conhecimento novoConhecimento);
 
-        public Task DeleteConhecimentoByIdAsync(Conhecimento id);
+        public Task DeleteConhecimentoByIdAsync(Conhecimento conhecimento);
     }
 }

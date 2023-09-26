@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using UijobsApi.DAL.Repositories.Idiomas;
+using UijobsApi.DAL.Unit_of_Work;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
@@ -13,34 +14,38 @@ namespace UijobsApi.Services.Idiomas
     {
 
         private readonly IIdiomaRepository _idiomaRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public IdiomaService(IIdiomaRepository idiomaRepository)
+        public IdiomaService(IIdiomaRepository idiomaRepository, IUnitOfWork unitOfWork)
         {
             _idiomaRepository = idiomaRepository;
+            _unitOfWork = unitOfWork;
         }
 
 
         public async Task<Idioma> AddIdiomaAsync(Idioma novoIdioma)
         {
-            var validationContext = new ValidationContext(novoIdioma, null, null);
-            var validationResults = new List<ValidationResult>();
-
-            if (!Validator.TryValidateObject(novoIdioma, validationContext, validationResults, true))
+            Idioma idiomaExistente = await _idiomaRepository.GetIdiomaByIdAsync(novoIdioma.idIdiomas);
+            if (idiomaExistente != null && idiomaExistente.Equals(novoIdioma))
             {
-                // Se os dados não forem válidos, você pode lançar uma exceção ou tratar o erro de outra forma.
-                throw new ValidationException("Os dados não são válidos.");
+                // bad request exception \/
+                throw new Exception("Já existe um idioma cadastrado com esse Id.");
             }
-
-            // Se os dados forem válidos, você pode continuar com a adição da escolaridade.
-            return await _idiomaRepository.AddIdiomaAsync(novoIdioma);
+            Idioma idioma = await _idiomaRepository.AddIdiomaAsync(novoIdioma);
+            await _unitOfWork.SaveChangesAsync();
+            return idioma;
         }
 
-        public async Task DeleteIdiomaByIdAsync(Idioma id)
+        public async Task DeleteIdiomaByIdAsync(int id)
         {
-            // Você pode adicionar lógica de negócios adicional aqui, se necessário.
+            Idioma idioma = await _idiomaRepository.GetIdiomaByIdAsync(id);
 
-            // Chame o método de exclusão do repositório.
-            await _idiomaRepository.DeleteIdiomaByIdAsync(id);
+            if (idioma is null)
+            {
+                throw new NotFoundException("Idioma com id não existe");
+            }
+            _idiomaRepository.DeleteIdiomaByIdAsync(idioma);
+            await _unitOfWork.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<Idioma>> GetAllIdiomaAsync()

@@ -16,7 +16,7 @@ namespace UijobsApi.DAL.Repositories.Idiomas
 
         public Task<Idioma> AddIdiomaAsync(Idioma novoIdioma);
 
-        public Task DeleteIdiomaByIdAsync(Idioma id);
+        public Task DeleteIdiomaByIdAsync(Idioma idioma);
 
     }
 }

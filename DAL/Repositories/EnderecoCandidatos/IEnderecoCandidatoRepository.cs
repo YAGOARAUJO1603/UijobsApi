@@ -13,7 +13,7 @@ namespace UijobsApi.DAL.Repositories.EnderecoCandidatos
 
         Task<IEnumerable<EnderecoCandidato>> GetAllEnderecoCandidato();
         Task<EnderecoCandidato> AddEnderecoCandidatosAsync(EnderecoCandidato novoEnderecoCandidato);
-        Task DeleteEnderecoCandidatoAsync(EnderecoCandidato id);
+        Task DeleteEnderecoCandidatoAsync(EnderecoCandidato enderecoCandidato);
 
 
     }

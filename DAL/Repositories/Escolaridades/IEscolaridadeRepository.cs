@@ -17,7 +17,7 @@ namespace UijobsApi.DAL.Repositories.Escolaridades
 
         public Task<Escolaridade> AddEscolaridadeAsync(Escolaridade novaEscolaridade);
 
-        public Task DeleteEscolaridadeByIdAsync(Escolaridade id);
+        public Task DeleteEscolaridadeByIdAsync(Escolaridade escolaridade);
 
 
     }

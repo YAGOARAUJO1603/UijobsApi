@@ -74,11 +74,11 @@ namespace UIJobsAPI.Controllers
 
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCurso(Curso id)
+        public async Task<IActionResult> DeleteCurso(int id)
         {
             try
             {
-                await _cursoRepository.DeleteCursoByIdAsync(id);
+                await _cursoService.DeleteCursoByIdAsync(id);
                 return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
             }
             catch (Exception ex)

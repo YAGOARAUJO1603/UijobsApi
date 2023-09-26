@@ -6,9 +6,6 @@ namespace UIJobsAPI.Models
     public class EnderecoCandidato
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int idEnderecoCandidato { get; set; }
-
         [Required]
         public int idCandidato { get; set; }
 

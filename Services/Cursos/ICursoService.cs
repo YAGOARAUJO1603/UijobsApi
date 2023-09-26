@@ -10,6 +10,6 @@ namespace UIJobsAPI.Services.Cursos
         public Task<Curso> GetCursoByIdAsync(int id);
         public Task<Curso> AddCursoAsync([FromBody] Curso novoCurso);
 
-        public Task DeleteCursoByIdAsync(Curso id);
+        public Task DeleteCursoByIdAsync(int id);
     }
 }

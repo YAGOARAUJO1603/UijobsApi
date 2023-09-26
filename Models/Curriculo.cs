@@ -8,15 +8,30 @@ namespace UIJobsAPI.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int idCurriculo { get; set; }
-
+        
+        //Novo
         [Required]
-        public int idFormacaoAcademica { get; set; }
+        [ForeignKey("idEscolaridade")]
+        public Escolaridade idEscolaridade { get; set; }
+
+        //Novo
+        [Required]
+        [ForeignKey("idCandidato")]
+        public Candidato idCandidato { get; set; }
 
         [Required]
         [MaxLength(200)]
         public string objetivo { get; set; }
 
-        [ForeignKey("idFormacaoAcademica")]
-        public FormacaoAcademica FormacaoAcademica { get; set; }
+        //Novo
+        //Data de Cadastro do Curriculo
+        [Required]
+        public DateTime dcCurriculo { get; set; }
+        
+        //Novo
+        //Data de ??? do Curriculo (Algo haver com ultima atualização no currículo)
+        [Required]
+        public DateTime duCurriculo { get; set; }   
+
     }
 }

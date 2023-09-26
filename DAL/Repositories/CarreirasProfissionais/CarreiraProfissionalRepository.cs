@@ -26,9 +26,9 @@ namespace UijobsApi.DAL.Repositories.CarreirasProfissionais
 
         }
 
-        public async Task DeleteCarreiraProfissionalAsync(CarreiraProfissional id)
+        public async Task DeleteCarreiraProfissionalAsync(CarreiraProfissional carreiraProfissional)
         {
-            _context.CarreiraProfissional.Remove(id);
+            _context.CarreiraProfissional.Remove(carreiraProfissional);
         }
 
         public async Task<CarreiraProfissional> GetCarreiraProfissionalByIdAsync(int id)

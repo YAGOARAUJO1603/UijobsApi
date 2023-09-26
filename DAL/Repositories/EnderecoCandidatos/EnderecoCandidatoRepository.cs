@@ -24,9 +24,9 @@ namespace UijobsApi.DAL.Repositories.EnderecoCandidatos
 
         }
 
-        public async Task DeleteEnderecoCandidatoAsync(EnderecoCandidato id)
+        public async Task DeleteEnderecoCandidatoAsync(EnderecoCandidato enderecoCandidato)
         {
-            _context.EnderecoCandidato.Remove(id);
+            _context.EnderecoCandidato.Remove(enderecoCandidato);
         }
 
         public async Task<IEnumerable<EnderecoCandidato>> GetAllEnderecoCandidato()
@@ -37,7 +37,7 @@ namespace UijobsApi.DAL.Repositories.EnderecoCandidatos
 
         public async Task<EnderecoCandidato> GetEnderecoCandidatosByIdAsync(int id)
         {
-            return await _context.EnderecoCandidato.FirstOrDefaultAsync(endCandi => endCandi.idEnderecoCandidato == id);
+            return await _context.EnderecoCandidato.FirstOrDefaultAsync(endCandi => endCandi.idCandidato == id);
 
         }
     }

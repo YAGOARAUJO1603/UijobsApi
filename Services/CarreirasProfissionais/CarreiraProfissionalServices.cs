@@ -1,6 +1,7 @@
 using UIJobsAPI.Models;
 using UIJobsAPI.Exceptions;
 using UijobsApi.DAL.Repositories.CarreirasProfissionais;
+using UijobsApi.DAL.Unit_of_Work;
 
 namespace UijobsApi.Services.CarreirasProfissionais
 {
@@ -8,37 +9,27 @@ namespace UijobsApi.Services.CarreirasProfissionais
     {
 
         private readonly ICarreiraProfissionalRepository _carreiraProfissionalRepository;
+        private readonly IUnitOfWork _unitOfWork;
         private object _context;
 
-        public CarreiraProfissionalServices(ICarreiraProfissionalRepository carreiraProfissionalRepository)
+        public CarreiraProfissionalServices(ICarreiraProfissionalRepository carreiraProfissionalRepository, IUnitOfWork unitOfWork)
         {
             _carreiraProfissionalRepository = carreiraProfissionalRepository;
+            _unitOfWork = unitOfWork;
         }
 
 
         public async Task<CarreiraProfissional> AddCarreiraProfissionalAsync(CarreiraProfissional novaCarreiraProfissional)
         {
-            // Verifique se a data de início e a data de fim foram fornecidas
-            if (novaCarreiraProfissional.tempoInicio == null || novaCarreiraProfissional.tempoFim == null)
+            CarreiraProfissional carreiraProfissionalExistente = await _carreiraProfissionalRepository.GetCarreiraProfissionalByIdAsync(novaCarreiraProfissional.idCarreiraProfissional);
+            if (carreiraProfissionalExistente != null && carreiraProfissionalExistente.Equals(novaCarreiraProfissional))
             {
-                // Lançar uma exceção ou retornar um erro, pois ambas as datas são obrigatórias
-                throw new ArgumentException("As datas de início e término são obrigatórias.");
+                // bad request exception \/
+                throw new Exception("Já existe carreira Profissional Cadastrada.");
             }
-
-            // Calcule a diferença de anos entre as datas de início e término
-            int anosDeExperiencia = novaCarreiraProfissional.tempoFim.Year - novaCarreiraProfissional.tempoInicio.Year;
-
-            // Verifique se a experiência é maior do que 20 anos
-            if (anosDeExperiencia > 20)
-            {
-                // Lançar uma exceção ou retornar um erro informando que a experiência não pode ser superior a 20 anos
-                throw new ArgumentException("A experiência não pode ser superior a 20 anos.");
-            }
-
-            // Continue com a adição da carreira profissional usando o repositório
-            var carreiraProfissionalAdicionada = await _carreiraProfissionalRepository.AddCarreiraProfissionalAsync(novaCarreiraProfissional);
-
-            return carreiraProfissionalAdicionada;
+            CarreiraProfissional carreiraProfissional = await _carreiraProfissionalRepository.AddCarreiraProfissionalAsync(novaCarreiraProfissional);
+            await _unitOfWork.SaveChangesAsync();
+            return carreiraProfissional;
         }
 
   
@@ -55,39 +46,18 @@ namespace UijobsApi.Services.CarreirasProfissionais
             return carreiraProfissional;
         }
 
-        public async Task<CarreiraProfissional> PutCarreiraProfissionalAsync(int id, CarreiraProfissional carreiraProfissionalAtualizada)
+
+
+          public async Task DeleteCarreiraProfissionalAsync(int id)
         {
-            // Verifique se a carreira profissional atualizada não é nula
-            if (carreiraProfissionalAtualizada == null)
+            CarreiraProfissional carreiraProfissional = await _carreiraProfissionalRepository.GetCarreiraProfissionalByIdAsync(id);
+
+            if (carreiraProfissional is null)
             {
-                throw new ArgumentNullException(nameof(carreiraProfissionalAtualizada), "Os dados da carreira profissional atualizada são inválidos.");
+                throw new NotFoundException("Candidato com id não existe");
             }
-
-            // Verifique se a carreira profissional existe com base no ID
-            var existingCarreiraProfissional = await _carreiraProfissionalRepository.GetCarreiraProfissionalByIdAsync(id);
-
-            if (existingCarreiraProfissional == null)
-            {
-                throw new NotFoundException($"Carreira profissional com ID {id} não encontrada.");
-            }
-
-            existingCarreiraProfissional.nomeEmpresa = carreiraProfissionalAtualizada.nomeEmpresa;
-            existingCarreiraProfissional.tempoInicio = carreiraProfissionalAtualizada.tempoInicio;
-            existingCarreiraProfissional.tempoFim = carreiraProfissionalAtualizada.tempoFim;
-            existingCarreiraProfissional.cargo = carreiraProfissionalAtualizada.cargo;
-
-            return existingCarreiraProfissional;
-
-        }
-
-          public Task DeleteCarreiraProfissionalAsync(CarreiraProfissional id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IEnumerable<CarreiraProfissional>> GetCarreiraProfissionalByIdAsync()
-        {
-            throw new NotImplementedException();
+            _carreiraProfissionalRepository.DeleteCarreiraProfissionalAsync(carreiraProfissional);
+            await _unitOfWork.SaveChangesAsync();
         }
     }
 }

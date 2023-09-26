@@ -26,9 +26,9 @@ namespace UijobsApi.DAL.Repositories.Escolaridades
         }
 
 
-        public async Task DeleteEscolaridadeByIdAsync(Escolaridade id)
+        public async Task DeleteEscolaridadeByIdAsync(Escolaridade escolaridade)
         {
-            _context.Escolaridade.Remove(id);
+            _context.Escolaridade.Remove(escolaridade);
         }
 
         public async Task<IEnumerable<Escolaridade>> GetAllEscolaridadeAsync()

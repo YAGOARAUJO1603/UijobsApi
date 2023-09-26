@@ -80,11 +80,11 @@ namespace UijobsApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteFormacaoAcademica(FormacaoAcademica id)
+        public async Task<IActionResult> DeleteFormacaoAcademica(int id)
         {
             try
             {
-                await _formacaoAcademicaRepository.DeleteFormacoesAcademicasByIdAsync(id);
+                await _formacaoAcademicaService.DeleteFormacoesAcademicasByIdAsync(id);
                 return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
             }
             catch (Exception ex)
