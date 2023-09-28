@@ -22,6 +22,25 @@ namespace UijobsApi.Services.Conhecimentos
             _unitOfWork = unitOfWork;
         }
 
+
+        public async Task<IEnumerable<Conhecimento>> GetAllConhecimentoAsync()
+        {
+            return await _conhecimentoRepository.GetAllConhecimentoAsync();
+        }
+
+        public async Task<Conhecimento> GetConhecimentoByIdAsync(int id)
+        {
+            Conhecimento conhecimento = await _conhecimentoRepository.GetConhecimentoByIdAsync(id);
+
+            if (conhecimento == null)
+            {
+                throw new NotFoundException("Candidato");
+            }
+
+            return conhecimento;
+        }
+
+
         public async Task<Conhecimento> AddConhecimentoAsync(Conhecimento novoConhecimento)
         {
             Conhecimento conhecimentoExistente = await _conhecimentoRepository.GetConhecimentoByIdAsync(novoConhecimento.idConhecimentos);
@@ -46,23 +65,6 @@ namespace UijobsApi.Services.Conhecimentos
             }
             _conhecimentoRepository.DeleteConhecimentoByIdAsync(conhecimento);
             await _unitOfWork.SaveChangesAsync();
-        }
-
-        public async Task<IEnumerable<Conhecimento>> GetAllConhecimentoAsync()
-        {
-            return await _conhecimentoRepository.GetAllConhecimentoAsync();
-        }
-
-        public async Task<Conhecimento> GetConhecimentoByIdAsync(int id)
-        {
-            Conhecimento conhecimento = await _conhecimentoRepository.GetConhecimentoByIdAsync(id);
-
-            if (conhecimento == null)
-            {
-                throw new NotFoundException("Candidato");
-            }
-
-            return conhecimento;
         }
     }
 }

@@ -35,7 +35,7 @@ namespace UIJobsAPI.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Mapeamento BeneficioVaga
+            // MapeamentoBeneficioVaga
             modelBuilder.Entity<BeneficioVaga>()
                 .HasKey(bv => new { bv.idVagas, bv.idBeneficio });
 
@@ -49,23 +49,22 @@ namespace UIJobsAPI.Data
                 .WithMany()
                 .HasForeignKey(bv => bv.idVagas);
 
-/*            // Mapeamento Candidato
-            modelBuilder.Entity<Candidato>()
-                .HasOne(c => c.Curriculo)
-                .WithMany()
-                .HasForeignKey(c => c.idCurriculo);*/
-
             // Mapeamento CarreiraProfissional
             modelBuilder.Entity<CarreiraProfissional>()
                 .HasOne(c => c.Curriculo)
                 .WithMany()
                 .HasForeignKey(c => c.idCurriculo);
 
-            // Mapeamento Conhecimento
-            modelBuilder.Entity<Conhecimento>()
-                .HasOne(c => c.Nivel)
+
+            // Mapeamento Curriculo
+            modelBuilder.Entity<Curriculo>()
+                .HasOne(c => c.Candidato)
                 .WithMany()
-                .HasForeignKey(c => c.idNivel);
+                .HasForeignKey(c => c.idCandidato);
+            modelBuilder.Entity<Curriculo>()
+                .HasOne(c => c.Escolaridade)
+                .WithMany()
+                .HasForeignKey(c => c.idEscolaridade);
 
             // Mapeamento CurriculoConhecimento
             modelBuilder.Entity<CurriculoConhecimento>()
@@ -112,7 +111,7 @@ namespace UIJobsAPI.Data
                 .HasOne(f => f.Curso)
                 .WithMany()
                 .HasForeignKey(f => f.idCursos);
-            
+
             // Mapeamento Vaga
             modelBuilder.Entity<Vaga>()
                 .HasOne(v => v.Empresa)

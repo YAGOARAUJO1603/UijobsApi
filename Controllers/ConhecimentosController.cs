@@ -15,15 +15,11 @@ namespace UijobsApi.Controllers
     [Route("api/v1/[controller]")]
     public class ConhecimentosController : ControllerBase
     {
-        private readonly DataContext _context;
         private readonly IConhecimentoService _conhecimentoService;
-        private readonly IConhecimentoRepository _conhecimentoRepository;
 
-        public ConhecimentosController(DataContext context, IConhecimentoService conhecimentoService, IConhecimentoRepository conhecimentoRepository)
+        public ConhecimentosController(IConhecimentoService conhecimentoService)
         {
-            _context = context;
             _conhecimentoService = conhecimentoService;
-            _conhecimentoRepository = conhecimentoRepository;
         }
 
         [HttpGet("GetAll")]

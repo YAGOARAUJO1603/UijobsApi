@@ -11,18 +11,14 @@ namespace UIJobsAPI.Controllers
     [Route("api/v1/[controller]")]
     public class CandidatosController : ControllerBase
     {
-        private readonly DataContext _context;
         private readonly ICandidatoService _candidatoService;
-        private readonly ICandidatoRepository _candidatoRepository;
 
-        public CandidatosController(DataContext context, ICandidatoService candidatoService, ICandidatoRepository candidatoRepository)
+        public CandidatosController(ICandidatoService candidatoService)
         {
-            _context = context;
             _candidatoService = candidatoService;
-            _candidatoRepository = candidatoRepository;
         }
 
-        
+
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAllAsync()
         {

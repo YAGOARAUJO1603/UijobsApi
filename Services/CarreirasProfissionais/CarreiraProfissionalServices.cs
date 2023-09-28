@@ -58,14 +58,11 @@ namespace UijobsApi.Services.CarreirasProfissionais
             }
             _carreiraProfissionalRepository.DeleteCarreiraProfissionalAsync(carreiraProfissional);
             await _unitOfWork.SaveChangesAsync();
-<<<<<<< HEAD
-=======
         }
 
         public Task<IEnumerable<CarreiraProfissional>> GetCarreiraProfissionalByIdAsync()
         {
             throw new NotImplementedException();
->>>>>>> 082cb01ceb7037aaaa31e092c2bf6803ee31e40f
         }
     }
 }

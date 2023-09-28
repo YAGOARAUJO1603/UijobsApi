@@ -19,11 +19,6 @@ namespace UijobsApi.DAL.Repositories.Conhecimentos
             _unitOfWork = unitOfWork;
         }
 
-        public Task SaveChangesAsync()
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<Conhecimento> AddConhecimentoAsync(Conhecimento novoConhecimento)
         {
             await _context.Conhecimentos.AddAsync(novoConhecimento);
@@ -43,7 +38,7 @@ namespace UijobsApi.DAL.Repositories.Conhecimentos
 
         public async Task<Conhecimento> GetConhecimentoByIdAsync(int id)
         {
-            return await _context.Conhecimentos.FirstOrDefaultAsync(conheci => conheci.idConhecimentos == id);
+            return await _context.Conhecimentos.FirstOrDefaultAsync(c => c.idConhecimentos == id);
         }
 
     }

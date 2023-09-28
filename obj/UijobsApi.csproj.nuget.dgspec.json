@@ -1,37 +1,23 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "D:\\Projetos_DS\\UijobsApi\\UijobsApi.csproj": {}
+    "A:\\3DS\\Hugo\\TCC\\UijobsApi\\UijobsApi.csproj": {}
   },
   "projects": {
-    "D:\\Projetos_DS\\UijobsApi\\UijobsApi.csproj": {
+    "A:\\3DS\\Hugo\\TCC\\UijobsApi\\UijobsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos_DS\\UijobsApi\\UijobsApi.csproj",
+        "projectUniqueName": "A:\\3DS\\Hugo\\TCC\\UijobsApi\\UijobsApi.csproj",
         "projectName": "UijobsApi",
-        "projectPath": "D:\\Projetos_DS\\UijobsApi\\UijobsApi.csproj",
+        "projectPath": "A:\\3DS\\Hugo\\TCC\\UijobsApi\\UijobsApi.csproj",
         "packagesPath": "C:\\Users\\etechas\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos_DS\\UijobsApi\\obj\\",
-=======
-    "C:\\Users\\ycont\\OneDrive\\Área de Trabalho\\UijobsApi\\UijobsApi.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\ycont\\OneDrive\\Área de Trabalho\\UijobsApi\\UijobsApi.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\ycont\\OneDrive\\Área de Trabalho\\UijobsApi\\UijobsApi.csproj",
-        "projectName": "UijobsApi",
-        "projectPath": "C:\\Users\\ycont\\OneDrive\\Área de Trabalho\\UijobsApi\\UijobsApi.csproj",
-        "packagesPath": "C:\\Users\\ycont\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ycont\\OneDrive\\Área de Trabalho\\UijobsApi\\obj\\",
->>>>>>> 082cb01ceb7037aaaa31e092c2bf6803ee31e40f
+        "outputPath": "A:\\3DS\\Hugo\\TCC\\UijobsApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ycont\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\etechas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -41,6 +27,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -105,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
         }
       }
     }

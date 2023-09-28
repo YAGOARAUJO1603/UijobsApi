@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using UijobsApi.DAL.Repositories.Candidatos;
+using UijobsApi.DAL.Repositories.Conhecimentos;
 using UijobsApi.DAL.Repositories.Cursos;
 using UijobsApi.DAL.Unit_of_Work;
+using UijobsApi.Services.Conhecimentos;
 using UIJobsAPI.Data;
 using UIJobsAPI.Services.Candidatos;
 using UIJobsAPI.Services.Cursos;
@@ -17,12 +19,13 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoLocal"));
 });
 
-builder.Services.AddScoped<ICandidatoService, CandidatoService>();
+builder.Services.AddScoped<IConhecimentoRepository, ConhecimentoRepository>();
 builder.Services.AddScoped<ICandidatoRepository, CandidatoRepository>();
 builder.Services.AddScoped<ICursoRepository, CursoRepository>();
+builder.Services.AddScoped<ICandidatoService, CandidatoService>();
 builder.Services.AddScoped<ICursoService, CursoService>();
+builder.Services.AddScoped<IConhecimentoService, ConhecimentoService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
 builder.Services.AddCors();
 
 builder.Services.AddControllers();
@@ -37,8 +40,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 //if (app.Environment.IsDevelopment())
 //{
-    app.UseSwagger();
-    app.UseSwaggerUI();
+app.UseSwagger();
+app.UseSwaggerUI();
 //}
 
 //app.UseHttpsRedirection();

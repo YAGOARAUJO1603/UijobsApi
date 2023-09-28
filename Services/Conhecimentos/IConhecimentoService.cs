@@ -8,11 +8,11 @@ namespace UijobsApi.Services.Conhecimentos
 {
     public interface IConhecimentoService
     {
-        public Task<IEnumerable<Conhecimento>> GetAllConhecimentoAsync();
         //Listar todos
+        public Task<IEnumerable<Conhecimento>> GetAllConhecimentoAsync();
 
-        public Task<Conhecimento> GetConhecimentoByIdAsync(int id);
         //listar por id
+        public Task<Conhecimento> GetConhecimentoByIdAsync(int id);
 
         public Task<Conhecimento> AddConhecimentoAsync(Conhecimento novoConhecimento);
 

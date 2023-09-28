@@ -11,13 +11,11 @@ namespace UIJobsAPI.Models
         
         //Novo
         [Required]
-        [ForeignKey("idEscolaridade")]
-        public Escolaridade idEscolaridade { get; set; }
+        public int idEscolaridade { get; set; }
 
         //Novo
         [Required]
-        [ForeignKey("idCandidato")]
-        public Candidato idCandidato { get; set; }
+        public int idCandidato { get; set; }
 
         [Required]
         [MaxLength(200)]
@@ -31,7 +29,13 @@ namespace UIJobsAPI.Models
         //Novo
         //Data de ??? do Curriculo (Algo haver com ultima atualização no currículo)
         [Required]
-        public DateTime duCurriculo { get; set; }   
+        public DateTime duCurriculo { get; set; }
 
+        [NotMapped]
+        [ForeignKey("idEscolaridade")]
+        public Escolaridade Escolaridade { get; set; }
+
+        [ForeignKey("idCandidato")]
+        public Candidato Candidato { get; set; }
     }
 }
