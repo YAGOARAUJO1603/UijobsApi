@@ -13,6 +13,12 @@ namespace UIJobsAPI.Models
         [Required]
         public int idIdiomas { get; set; }
 
+        [Required]
+        public int idNivel { get; set; }
+
+        [ForeignKey("idNivel")]
+        public Nivel Nivel { get; set; }
+
         [ForeignKey("idVagas")]
         public Vaga Vagas { get; set; }
 

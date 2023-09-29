@@ -160,16 +160,83 @@ A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.MvcApplicationPartsAssemb
 A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.dll
 A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\refint\UIJobsAPI.dll
 A:\3DS\ARAUJO\TCC\UIJobsAPI\obj\Debug\net7.0\UIJobsAPI.pdb
-C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.AssemblyReference.cache
-C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfoInputs.cache
-C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfo.cs
-C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CoreCompileInputs.cache
-C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\refint\UijobsApi.dll
-C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.pdb
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\appsettings.Development.json
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\appsettings.json
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\UijobsApi.exe
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\UijobsApi.deps.json
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\UijobsApi.runtimeconfig.json
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\UijobsApi.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\UijobsApi.pdb
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Azure.Core.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Azure.Identity.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Humanizer.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.OpenApi.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Mono.TextTemplating.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Newtonsoft.Json.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\System.CodeDom.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\System.Drawing.Common.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\System.Memory.Data.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\System.Runtime.Caching.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\System.Security.Permissions.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\System.Windows.Extensions.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+A:\3DS\Projetos\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.AssemblyReference.cache
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\UijobsApi.GeneratedMSBuildEditorConfig.editorconfig
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfoInputs.cache
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfo.cs
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CoreCompileInputs.cache
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cs
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cache
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.UijobsApi.Microsoft.AspNetCore.StaticWebAssets.props
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.build.UijobsApi.props
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.UijobsApi.props
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.UijobsApi.props
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\staticwebassets.pack.json
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\staticwebassets.build.json
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\staticwebassets.development.json
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\scopedcss\bundle\UijobsApi.styles.css
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CopyComplete
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\UijobsApi.dll
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\refint\UijobsApi.dll
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\UijobsApi.pdb
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\UijobsApi.genruntimeconfig.cache
+A:\3DS\Projetos\UijobsApi\obj\Debug\net7.0\ref\UijobsApi.dll
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\appsettings.json
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\UijobsApi.exe
@@ -226,6 +293,13 @@ C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\wi
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.AssemblyReference.cache
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfoInputs.cache
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfo.cs
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CoreCompileInputs.cache
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.UijobsApi.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.build.UijobsApi.props
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.UijobsApi.props
@@ -235,5 +309,239 @@ C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\staticwebas
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\scopedcss\bundle\UijobsApi.styles.css
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CopyComplete
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\refint\UijobsApi.dll
+C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.pdb
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\UijobsApi.genruntimeconfig.cache
 C:\Users\ycont\OneDrive\Área de Trabalho\UijobsApi\obj\Debug\net7.0\ref\UijobsApi.dll
+D:\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.AssemblyReference.cache
+D:\UijobsApi\obj\Debug\net7.0\UijobsApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfoInputs.cache
+D:\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfo.cs
+D:\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CoreCompileInputs.cache
+D:\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cs
+D:\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cache
+D:\UijobsApi\obj\Debug\net7.0\UijobsApi.dll
+D:\UijobsApi\obj\Debug\net7.0\refint\UijobsApi.dll
+D:\UijobsApi\obj\Debug\net7.0\UijobsApi.pdb
+D:\UijobsApi\bin\Debug\net7.0\appsettings.Development.json
+D:\UijobsApi\bin\Debug\net7.0\appsettings.json
+D:\UijobsApi\bin\Debug\net7.0\UijobsApi.exe
+D:\UijobsApi\bin\Debug\net7.0\UijobsApi.deps.json
+D:\UijobsApi\bin\Debug\net7.0\UijobsApi.runtimeconfig.json
+D:\UijobsApi\bin\Debug\net7.0\UijobsApi.dll
+D:\UijobsApi\bin\Debug\net7.0\UijobsApi.pdb
+D:\UijobsApi\bin\Debug\net7.0\Azure.Core.dll
+D:\UijobsApi\bin\Debug\net7.0\Azure.Identity.dll
+D:\UijobsApi\bin\Debug\net7.0\Humanizer.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\UijobsApi\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\UijobsApi\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\UijobsApi\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\UijobsApi\bin\Debug\net7.0\System.CodeDom.dll
+D:\UijobsApi\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\UijobsApi\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\UijobsApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\UijobsApi\bin\Debug\net7.0\System.Memory.Data.dll
+D:\UijobsApi\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\UijobsApi\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\UijobsApi\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\UijobsApi\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\UijobsApi\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\UijobsApi\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\UijobsApi\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\UijobsApi\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.UijobsApi.Microsoft.AspNetCore.StaticWebAssets.props
+D:\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.build.UijobsApi.props
+D:\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.UijobsApi.props
+D:\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.UijobsApi.props
+D:\UijobsApi\obj\Debug\net7.0\staticwebassets.pack.json
+D:\UijobsApi\obj\Debug\net7.0\staticwebassets.build.json
+D:\UijobsApi\obj\Debug\net7.0\staticwebassets.development.json
+D:\UijobsApi\obj\Debug\net7.0\scopedcss\bundle\UijobsApi.styles.css
+D:\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CopyComplete
+D:\UijobsApi\obj\Debug\net7.0\UijobsApi.genruntimeconfig.cache
+D:\UijobsApi\obj\Debug\net7.0\ref\UijobsApi.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\appsettings.Development.json
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\appsettings.json
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\UijobsApi.exe
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\UijobsApi.deps.json
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\UijobsApi.runtimeconfig.json
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\UijobsApi.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\UijobsApi.pdb
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Azure.Core.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Azure.Identity.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Humanizer.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\System.CodeDom.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\System.Memory.Data.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.AssemblyReference.cache
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\UijobsApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfoInputs.cache
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfo.cs
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CoreCompileInputs.cache
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.UijobsApi.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.build.UijobsApi.props
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.UijobsApi.props
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.UijobsApi.props
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\staticwebassets.pack.json
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\staticwebassets.build.json
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\staticwebassets.development.json
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\scopedcss\bundle\UijobsApi.styles.css
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CopyComplete
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\UijobsApi.dll
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\refint\UijobsApi.dll
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\UijobsApi.pdb
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\UijobsApi.genruntimeconfig.cache
+D:\Projetos_DS\UijobsApi\obj\Debug\net7.0\ref\UijobsApi.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.AssemblyReference.cache
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.GeneratedMSBuildEditorConfig.editorconfig
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfoInputs.cache
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.AssemblyInfo.cs
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CoreCompileInputs.cache
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cs
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.MvcApplicationPartsAssemblyInfo.cache
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.dll
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\refint\UijobsApi.dll
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.pdb
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\appsettings.Development.json
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\appsettings.json
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.exe
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.deps.json
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.runtimeconfig.json
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\UijobsApi.pdb
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Azure.Core.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Azure.Identity.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Humanizer.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.OpenApi.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Mono.TextTemplating.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Newtonsoft.Json.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\System.CodeDom.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\System.Drawing.Common.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\System.Memory.Data.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\System.Runtime.Caching.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\System.Security.Permissions.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\System.Windows.Extensions.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+A:\3DS\Hugo\TCC\UijobsApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.UijobsApi.Microsoft.AspNetCore.StaticWebAssets.props
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.build.UijobsApi.props
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.UijobsApi.props
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.UijobsApi.props
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets.pack.json
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets.build.json
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\staticwebassets.development.json
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\scopedcss\bundle\UijobsApi.styles.css
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.csproj.CopyComplete
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\UijobsApi.genruntimeconfig.cache
+A:\3DS\Hugo\TCC\UijobsApi\obj\Debug\net7.0\ref\UijobsApi.dll

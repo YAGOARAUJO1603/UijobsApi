@@ -9,12 +9,6 @@ namespace UIJobsAPI.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int idCandidato { get; set; }
-/*
-        [Required]
-        public int idTokenFirebase { get; set; }
-*/
-        [Required]
-        public int idCurriculo { get; set; }
 
         [Required]
         [MaxLength(60)]
@@ -32,18 +26,5 @@ namespace UIJobsAPI.Models
         [MaxLength(100)]
         public string nomeMae { get; set; }
 
-        [ForeignKey("idCurriculo")]
-        public Curriculo Curriculo { get; set; }
-        
-
-        /*public static implicit operator Candidato(void v)
-        {
-            throw new NotImplementedException();
-        }*/
-
-        /*
-       [ForeignKey("idTokenFirebase")]
-       public TokenFirebase TokenFirebase { get; set; }
-*/
     }
 }

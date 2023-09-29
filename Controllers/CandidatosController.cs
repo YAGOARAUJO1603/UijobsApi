@@ -1,10 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using UijobsApi.DAL.Repositories.Candidatos;
 using UIJobsAPI.Data;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
-using UIJobsAPI.Repositories.Interfaces;
-using UIJobsAPI.Services.Candidatos;
 using UIJobsAPI.Services.Interfaces;
 
 namespace UIJobsAPI.Controllers
@@ -13,16 +11,14 @@ namespace UIJobsAPI.Controllers
     [Route("api/v1/[controller]")]
     public class CandidatosController : ControllerBase
     {
-        private readonly DataContext _context;
         private readonly ICandidatoService _candidatoService;
-        private readonly ICandidatoRepository _candidatoRepository;
 
-        public CandidatosController(DataContext context, ICandidatoService candidatoService, ICandidatoRepository candidatoRepository)
+        public CandidatosController(ICandidatoService candidatoService)
         {
-            _context = context;
             _candidatoService = candidatoService;
-            _candidatoRepository = candidatoRepository;
         }
+
+
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAllAsync()
         {
@@ -76,7 +72,7 @@ namespace UIJobsAPI.Controllers
         {
             try
             {
-                await _candidatoRepository.DeleteCandidatoByIdAsync(id);
+                await _candidatoService.DeleteCandidatoByIdAsync(id);
                 return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
             }
             catch (Exception ex)

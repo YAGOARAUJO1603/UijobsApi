@@ -1,18 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using UijobsApi.Repositories.EnderecoCandidatos;
 using UijobsApi.Services.EnderecoCandidatos;
 using UIJobsAPI.Data;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
-using UIJobsAPI.Services.Interfaces;
-using Microsoft.AspNetCore.Http;
-using UIJobsAPI.Repositories.Interfaces;
-using UIJobsAPI.Services.Candidatos;
+using UijobsApi.DAL.Repositories.EnderecoCandidatos;
 
 namespace UijobsApi.Controllers
 {
@@ -48,7 +39,7 @@ namespace UijobsApi.Controllers
            
         }
         [HttpPost]
-        public async Task<IActionResult> AddEnderecoCandidatoAsync( EnderecoCandidato novoEnderecoCandidato)
+        public async Task<IActionResult> AddEnderecoCandidatoAsync(EnderecoCandidato novoEnderecoCandidato)
         {
             try
             {
@@ -61,6 +52,8 @@ namespace UijobsApi.Controllers
                 return ex.GetResponse();
 
             }
+
+            
         }
 
         [HttpDelete("{id}")]
@@ -68,7 +61,7 @@ namespace UijobsApi.Controllers
         {
             try
             {
-                await _enderecoCandidatoRepository.DeleteEnderecoCandidatoAsync(id);
+                await _enderecoCandidatoService.DeleteEnderecoCandidatoByIdAsync(id);
                 return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
             }
             catch (Exception ex)

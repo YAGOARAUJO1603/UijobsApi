@@ -8,9 +8,6 @@ using UIJobsAPI.Models;
 public class EnderecoEmpresa
 {
     [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int idEnderecoEmpresa { get; set; }
-
     [Required]
     public int idEmpresa { get; set; }
 
@@ -44,6 +41,8 @@ public class EnderecoEmpresa
     [Required]
     [StringLength(2)]
     public string uf { get; set; }
+
+//Tá certo?
 
     [ForeignKey("idEmpresa")]
     public Empresa Empresa { get; set; }

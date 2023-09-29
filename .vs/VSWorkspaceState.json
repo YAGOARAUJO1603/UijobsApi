@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Controllers",
-    "\\Repositories",
-    "\\Repositories\\Candidatos",
-    "\\Services"
+    ""
   ],
-  "SelectedNode": "\\Controllers\\CandidatosController.cs",
+  "SelectedNode": "\\UijobsApi.sln",
   "PreviewInSolutionExplorer": false
 }

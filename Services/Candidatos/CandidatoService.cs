@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections;
+using UijobsApi.DAL.Repositories.Candidatos;
+using UijobsApi.DAL.Unit_of_Work;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
-using UIJobsAPI.Repositories.Interfaces;
 using UIJobsAPI.Services.Interfaces;
 
 namespace UIJobsAPI.Services.Candidatos
@@ -11,12 +12,15 @@ namespace UIJobsAPI.Services.Candidatos
     public class CandidatoService : ICandidatoService
     {
         private readonly ICandidatoRepository _candidatoRepository;
+        private readonly IUnitOfWork _unitOfWork;
         
 
-        public CandidatoService(ICandidatoRepository candidatoRepository)
+        public CandidatoService(ICandidatoRepository candidatoRepository, IUnitOfWork unitOfWork)
         {
             _candidatoRepository = candidatoRepository;
+            _unitOfWork = unitOfWork;
         }
+
 
         public async Task<IEnumerable<Candidato>> GetAllCandidatosAsync()
         {
@@ -44,15 +48,21 @@ namespace UIJobsAPI.Services.Candidatos
                 throw new Exception("Já existe um candidato com esse email.");
             }
             Candidato candidato = await _candidatoRepository.AddCandidatoAsync(novoCandidato);
+            await _unitOfWork.SaveChangesAsync();
             return candidato;
         }
 
         public async Task DeleteCandidatoByIdAsync(int id)
         {
-            // Você pode adicionar lógica de negócios adicional aqui, se necessário.
 
-            // Chame o método de exclusão do repositório.
-            await _candidatoRepository.DeleteCandidatoByIdAsync(id);           
+            Candidato candidato = await _candidatoRepository.GetCandidatoByIdAsync(id);
+
+           if(candidato is null)
+            {
+                throw new NotFoundException("Candidato com id não existe");
+            }
+            _candidatoRepository.DeleteCandidatoByIdAsync(candidato);
+            await _unitOfWork.SaveChangesAsync();
         }
     }
 }

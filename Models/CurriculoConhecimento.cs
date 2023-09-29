@@ -12,11 +12,16 @@ namespace UIJobsAPI.Models
 
         [Column(Order = 1)]
         public int idConhecimentos { get; set; }
+        
+        public int idNivel { get; set; }
 
         [ForeignKey("idCurriculo")]
         public Curriculo Curriculo { get; set; }
 
         [ForeignKey("idConhecimentos")]
         public Conhecimento Conhecimentos { get; set; }
+
+        [ForeignKey("idNivel")]
+        public Nivel Nivel { get; set; }
     }
 }
