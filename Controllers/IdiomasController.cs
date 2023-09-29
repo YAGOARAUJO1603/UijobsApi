@@ -18,27 +18,11 @@ namespace UijobsApi.Controllers
     {
         private readonly DataContext _context;
         private readonly IIdiomaService _idiomaService;
-        private readonly IIdiomaRepository _idiomaRepository;
 
-        public IdiomasController(DataContext context, IIdiomaService idiomaService, IIdiomaRepository idiomaRepository)
+        public IdiomasController(DataContext context, IIdiomaService idiomaService)
         {
             _context = context;
             _idiomaService = idiomaService;
-            _idiomaRepository = idiomaRepository;
-        }
-
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAllAsync()
-        {
-            try
-            {
-                IEnumerable<Idioma> listaidioma = await _idiomaService.GetAllIdiomaAsync();
-                return Ok(listaidioma);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
         }
 
         [HttpGet("{id}")]
@@ -56,6 +40,20 @@ namespace UijobsApi.Controllers
             catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+        }
+
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAllAsync()
+        {
+            try
+            {
+                IEnumerable<Idioma> listaidioma = await _idiomaService.GetAllIdiomaAsync();
+                return Ok(listaidioma);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
 

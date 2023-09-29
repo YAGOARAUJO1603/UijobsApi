@@ -21,7 +21,21 @@ namespace UijobsApi.Services.Idiomas
             _idiomaRepository = idiomaRepository;
             _unitOfWork = unitOfWork;
         }
+        public async Task<Idioma> GetIdiomaByIdAsync(int id)
+        {
+            Idioma idioma = await _idiomaRepository.GetIdiomaByIdAsync(id);
 
+            if (idioma == null)
+            {
+                throw new NotFoundException("Candidato");
+            }
+
+            return idioma;
+        }
+        public async Task<IEnumerable<Idioma>> GetAllIdiomaAsync()
+        {
+            return await _idiomaRepository.GetAllIdiomaAsync();
+        }
 
         public async Task<Idioma> AddIdiomaAsync(Idioma novoIdioma)
         {
@@ -48,21 +62,5 @@ namespace UijobsApi.Services.Idiomas
             await _unitOfWork.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Idioma>> GetAllIdiomaAsync()
-        {
-            return await _idiomaRepository.GetAllIdiomaAsync();
-        }
-
-        public async Task<Idioma> GetIdiomaByIdAsync(int id)
-        {
-            Idioma idioma = await _idiomaRepository.GetIdiomaByIdAsync(id);
-
-            if (idioma == null)
-            {
-                throw new NotFoundException("Candidato");
-            }
-
-            return idioma;
-        }
     }
 }

@@ -24,21 +24,6 @@ namespace UijobsApi.Controllers
             _context = context;
         }
 
-
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAllAsync()
-        {
-            try
-            {
-                IEnumerable<CurriculoIdioma> listaCurriculoIdiomas = await _curriculoIdiomaService.GetAllCurriculoIdiomasAsync();
-                return Ok(listaCurriculoIdiomas);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
@@ -54,6 +39,20 @@ namespace UijobsApi.Controllers
             catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+        }
+
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAllAsync()
+        {
+            try
+            {
+                IEnumerable<CurriculoIdioma> listaCurriculoIdiomas = await _curriculoIdiomaService.GetAllCurriculoIdiomasAsync();
+                return Ok(listaCurriculoIdiomas);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
 

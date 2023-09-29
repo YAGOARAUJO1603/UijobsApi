@@ -24,21 +24,6 @@ namespace UijobsApi.Controllers
             _context = context;
         }
 
-
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAllAsync()
-        {
-            try
-            {
-                IEnumerable<CurriculoConhecimento> listaCurriculoConhecimentos = await _curriculoConhecimentoService.GetAllCurriculoConhecimentosAsync();
-                return Ok(listaCurriculoConhecimentos);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
@@ -57,6 +42,20 @@ namespace UijobsApi.Controllers
             }
         }
 
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAllAsync()
+        {
+            try
+            {
+                IEnumerable<CurriculoConhecimento> listaCurriculoConhecimentos = await _curriculoConhecimentoService.GetAllCurriculoConhecimentosAsync();
+                return Ok(listaCurriculoConhecimentos);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> AddCurriculoConhecimentoAsync(CurriculoConhecimento novoCurriculoConhecimento)
         {
@@ -70,7 +69,6 @@ namespace UijobsApi.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCurriculoConhecimento(int id)

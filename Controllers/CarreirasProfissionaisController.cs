@@ -26,11 +26,6 @@ namespace UijobsApi.Controllers
             _carreiraProfissionalRepository = carreiraProfissionalRepository;
             _carreiraProfissionalServices = carreiraProfissionalServices;
         }
-
-
-
-
-
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
@@ -64,7 +59,6 @@ namespace UijobsApi.Controllers
 
             }
         }
-
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCarreiraProfissional(int id)
         {
@@ -78,12 +72,6 @@ namespace UijobsApi.Controllers
                 return BadRequest(ex.Message); // Retorna um StatusCode 400 Bad Request em caso de erro.
             }
         }
-
-
-
-
-
-
 
     }
 }

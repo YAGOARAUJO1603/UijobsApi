@@ -18,21 +18,6 @@ namespace UIJobsAPI.Controllers
             _candidatoService = candidatoService;
         }
 
-
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAllAsync()
-        {
-            try
-            {
-                IEnumerable<Candidato> listacandidatos = await _candidatoService.GetAllCandidatosAsync();
-                return Ok(listacandidatos);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
@@ -50,6 +35,19 @@ namespace UIJobsAPI.Controllers
             {
                 // isso foge da gente
                 return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+        }
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAllAsync()
+        {
+            try
+            {
+                IEnumerable<Candidato> listacandidatos = await _candidatoService.GetAllCandidatosAsync();
+                return Ok(listacandidatos);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
         [HttpPost]

@@ -27,20 +27,6 @@ namespace UijobsApi.Controllers
             _formacaoAcademicaRepository = formacaoAcademicaRepository;
         }
 
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAllAsync()
-        {
-            try
-            {
-                IEnumerable<FormacaoAcademica> listaformacaoAcademica = await _formacaoAcademicaService.GetAllFormacoesAcademicasAsync();
-                return Ok(listaformacaoAcademica);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
@@ -56,6 +42,20 @@ namespace UijobsApi.Controllers
             catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+        }
+
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAllAsync()
+        {
+            try
+            {
+                IEnumerable<FormacaoAcademica> listaformacaoAcademica = await _formacaoAcademicaService.GetAllFormacoesAcademicasAsync();
+                return Ok(listaformacaoAcademica);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
 

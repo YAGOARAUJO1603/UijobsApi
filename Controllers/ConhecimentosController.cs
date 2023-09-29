@@ -22,20 +22,6 @@ namespace UijobsApi.Controllers
             _conhecimentoService = conhecimentoService;
         }
 
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAllAsync()
-        {
-            try
-            {
-                IEnumerable<Conhecimento> listaconhecimento = await _conhecimentoService.GetAllConhecimentoAsync();
-                return Ok(listaconhecimento);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
@@ -51,6 +37,19 @@ namespace UijobsApi.Controllers
             catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+        }
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAllAsync()
+        {
+            try
+            {
+                IEnumerable<Conhecimento> listaconhecimento = await _conhecimentoService.GetAllConhecimentoAsync();
+                return Ok(listaconhecimento);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
 

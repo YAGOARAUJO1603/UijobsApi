@@ -1,31 +1,24 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using UijobsApi.DAL.Repositories.Escolaridades;
-using UijobsApi.Services.Escolaridades;
+﻿using Microsoft.AspNetCore.Mvc;
 using UIJobsAPI.Data;
+using UijobsApi.Services.Idiomas;
+using UijobsApi.Services.Vagas;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
 namespace UijobsApi.Controllers
 {
-
     [ApiController]
     [Route("api/v1/[controller]")]
-    public class EscolaridadesController : ControllerBase
+
+    public class VagasController : ControllerBase
     {
-
         private readonly DataContext _context;
-        private readonly IEscolaridadeService _escolaridadeService;
-        private readonly IEscolaridadeRepository _escolaridadeRepository;
+        private readonly IVagaService _vagaService;
 
-        public EscolaridadesController(DataContext context, IEscolaridadeService escolaridadeService, IEscolaridadeRepository escolaridadeRepository)
+        public VagasController(DataContext context, IVagaService vagaService)
         {
             _context = context;
-            _escolaridadeService = escolaridadeService;
-            _escolaridadeRepository = escolaridadeRepository;
+            _vagaService = vagaService;
         }
 
         [HttpGet("{id}")]
@@ -33,8 +26,40 @@ namespace UijobsApi.Controllers
         {
             try
             {
-                Escolaridade escolaridade = await _escolaridadeService.GetEscolaridadeByIdAsync(id);
-                return Ok(escolaridade);
+                Vaga vaga = await _vagaService.GetVagaByIdAsync(id);
+                return Ok(vaga);
+            }
+            catch (BaseException ex)
+            {
+                return ex.GetResponse();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+        }
+
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAllAsync()
+        {
+            try
+            {
+                IEnumerable<Vaga> listavaga = await _vagaService.GetAllVagaAsync();
+                return Ok(listavaga);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddIdiomaAsync(Vaga novaVaga)
+        {
+            try
+            {
+                Vaga vaga = await _vagaService.AddVagaAsync(novaVaga);
+                return Created("Vaga", vaga);
             }
             catch (BaseException ex)
             {
@@ -48,46 +73,12 @@ namespace UijobsApi.Controllers
             }
         }
 
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAllAsync()
-        {
-            try
-            {
-                IEnumerable<Escolaridade> listaescolaridade = await _escolaridadeService.GetAllEscolaridadeAsync();
-                return Ok(listaescolaridade);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> AddEscolaridadeAsync([FromBody] Escolaridade novaEscolaridade)
-        {
-            try
-            {
-                Escolaridade escolaridade = await _escolaridadeService.AddEscolaridadeAsync(novaEscolaridade);
-                return Created("Escolaridade", escolaridade);
-            }
-           catch (BaseException ex)
-            {
-                // isso a gente controla
-                return ex.GetResponse();
-            }
-            catch (Exception ex)
-            {
-                // isso foge da gente
-                return StatusCode(StatusCodes.Status500InternalServerError);
-            }
-        }
-
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEscolaridade(int id)
+        public async Task<IActionResult> DeleteVaga(int id)
         {
             try
             {
-                await _escolaridadeService.DeleteEscolaridadeByIdAsync(id);
+                await _vagaService.DeleteVagaByIdAsync(id);
                 return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
             }
             catch (Exception ex)
@@ -95,11 +86,5 @@ namespace UijobsApi.Controllers
                 return BadRequest(ex.Message); // Retorna um StatusCode 400 Bad Request em caso de erro.
             }
         }
-
-
-
-
-
-
     }
 }

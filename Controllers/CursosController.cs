@@ -25,21 +25,6 @@ namespace UIJobsAPI.Controllers
             _context = context;
         }
 
-
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAllAsync()
-        {
-            try
-            {
-                IEnumerable<Curso> listaCursos = await _cursoService.GetAllCursosAsync();
-                return Ok(listaCursos);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
@@ -55,6 +40,20 @@ namespace UIJobsAPI.Controllers
             catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+        }
+
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAllAsync()
+        {
+            try
+            {
+                IEnumerable<Curso> listaCursos = await _cursoService.GetAllCursosAsync();
+                return Ok(listaCursos);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
 
