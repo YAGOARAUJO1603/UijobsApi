@@ -54,7 +54,7 @@ namespace UijobsApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddIdiomaAsync(Vaga novaVaga)
+        public async Task<IActionResult> AddVagaAsync(Vaga novaVaga)
         {
             try
             {

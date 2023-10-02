@@ -46,7 +46,10 @@ namespace UIJobsAPI.Services.Candidatos
             {
                 // bad request exception \/
                 throw new Exception("Já existe um candidato com esse email.");
-            }
+            } 
+
+ 
+
             Candidato candidato = await _candidatoRepository.AddCandidatoAsync(novoCandidato);
             await _unitOfWork.SaveChangesAsync();
             return candidato;

@@ -12,6 +12,15 @@ namespace UijobsApi.DAL.Repositories.Vagas
         {
             _context = context;
         }
+        public async Task<Vaga> GetVagaByIdAsync(int id)
+        {
+            return await _context.Vagas.FirstOrDefaultAsync(vaga => vaga.idVaga == id);
+        }
+
+        public async Task<IEnumerable<Vaga>> GetAllVagaAsync()
+        {
+            return await _context.Vagas.ToListAsync();
+        }
 
         public async Task<Vaga> AddVagaAsync(Vaga novaVaga)
         {
@@ -22,16 +31,6 @@ namespace UijobsApi.DAL.Repositories.Vagas
         public async Task DeleteVagaByIdAsync(Vaga vaga)
         {
             _context.Vagas.Remove(vaga);
-        }
-
-        public async Task<IEnumerable<Vaga>> GetAllVagaAsync()
-        {
-            return await _context.Vagas.ToListAsync();
-        }
-
-        public async Task<Vaga> GetVagaByIdAsync(int id)
-        {
-            return await _context.Vagas.FirstOrDefaultAsync(vaga => vaga.idVaga == id);
         }
     }
 }

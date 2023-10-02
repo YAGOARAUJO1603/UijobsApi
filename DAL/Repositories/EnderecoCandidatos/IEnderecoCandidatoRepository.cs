@@ -10,8 +10,6 @@ namespace UijobsApi.DAL.Repositories.EnderecoCandidatos
     public interface IEnderecoCandidatoRepository
     {
         Task<EnderecoCandidato> GetEnderecoCandidatosByIdAsync(int id);
-
-        Task<IEnumerable<EnderecoCandidato>> GetAllEnderecoCandidato();
         Task<EnderecoCandidato> AddEnderecoCandidatosAsync(EnderecoCandidato novoEnderecoCandidato);
         Task DeleteEnderecoCandidatoAsync(EnderecoCandidato enderecoCandidato);
 
