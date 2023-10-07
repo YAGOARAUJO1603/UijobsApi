@@ -31,7 +31,6 @@ namespace UijobsApi.DAL.Repositories.FormacoesAcademicas
         public async Task<IEnumerable<FormacaoAcademica>> GetAllFormacoesAcademicasAsync()
         {
             return await _context.FormacaoAcademica.ToListAsync();
-
         }
 
         public async Task<FormacaoAcademica> GetFormacoesAcademicasByIdAsync(int id)

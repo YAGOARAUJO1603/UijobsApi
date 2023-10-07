@@ -112,6 +112,11 @@ namespace UIJobsAPI.Data
                 .WithMany()
                 .HasForeignKey(f => f.idCursos);
 
+            modelBuilder.Entity<FormacaoAcademica>()
+                .HasOne(f => f.Curriculo)
+                .WithMany()
+                .HasForeignKey(c => c.idCurriculo);
+
             // Mapeamento Vaga
             modelBuilder.Entity<Vaga>()
                 .HasOne(v => v.Empresa)

@@ -17,7 +17,7 @@ namespace UijobsApi.Services.Beneficios
         }
         public async Task<Beneficio> AddBeneficioAsync(Beneficio novoBeneficio)
         {
-            Beneficio beneficioExistente = await _beneficioRepository.GetBeneficioByIdAsync(novoBeneficio.IdBeneficio);
+            Beneficio beneficioExistente = await _beneficioRepository.GetBeneficioByIdAsync(novoBeneficio.idBeneficio);
             if (beneficioExistente != null && beneficioExistente.Equals(novoBeneficio))
             {
                 // bad request exception \/

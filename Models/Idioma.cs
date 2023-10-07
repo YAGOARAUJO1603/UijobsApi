@@ -12,6 +12,6 @@ namespace UIJobsAPI.Models
         public int idIdiomas { get; set; }
 
         [Required]
-        public IdiomaEnum nomeIdioma { get; set; }
+        public string nomeIdioma { get; set; }
     }
 }

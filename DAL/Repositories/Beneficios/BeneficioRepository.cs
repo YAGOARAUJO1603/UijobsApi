@@ -31,7 +31,7 @@ namespace UijobsApi.DAL.Repositories.Beneficios
 
         public async Task<Beneficio> GetBeneficioByIdAsync(int id)
         {
-            return await _context.Beneficio.FirstOrDefaultAsync(benef => benef.IdBeneficio == id);
+            return await _context.Beneficio.FirstOrDefaultAsync(benef => benef.idBeneficio == id);
         }
     }
 }
