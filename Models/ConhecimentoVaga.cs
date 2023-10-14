@@ -8,7 +8,7 @@ namespace UijobsApi.Models
 {
     public class ConhecimentoVaga
     {
-        public int idVaga { get; set; }
+        public int idVagas { get; set; }
         
         public int idConhecimento { get; set; }
         public string idNivel { get; set; }

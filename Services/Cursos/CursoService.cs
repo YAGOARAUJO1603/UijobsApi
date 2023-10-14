@@ -24,7 +24,7 @@ namespace UIJobsAPI.Services.Cursos
 
         public async Task<Curso> AddCursoAsync([FromBody] Curso novoCurso)
         {
-            Curso cursoExistente = await _cursoRepository.GetCursoByIdAsync(novoCurso.idCurso);
+            Curso cursoExistente = await _cursoRepository.GetCursoByIdAsync(novoCurso.idCursos);
             if (cursoExistente != null && cursoExistente.Equals(novoCurso))
             {
                 // bad request exception \/

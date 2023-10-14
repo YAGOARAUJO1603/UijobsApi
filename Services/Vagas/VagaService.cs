@@ -36,7 +36,7 @@ namespace UijobsApi.Services.Vagas
 
         public async Task<Vaga> AddVagaAsync(Vaga novaVaga)
         {
-            Vaga vagaExistente = await _vagaRepository.GetVagaByIdAsync(novaVaga.idVaga);
+            Vaga vagaExistente = await _vagaRepository.GetVagaByIdAsync(novaVaga.idVagas);
             if (vagaExistente != null && vagaExistente.Equals(novaVaga))
             {
                 // bad request exception \/

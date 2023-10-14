@@ -8,7 +8,7 @@ public class CarreiraProfissional
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int idCarreiraProfissional { get; set; }
+    public int sqCarreiraProfissional { get; set; }
 
     [Required]
     public int idCurriculo { get; set; }

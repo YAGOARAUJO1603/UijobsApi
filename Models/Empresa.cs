@@ -29,6 +29,9 @@ namespace UIJobsAPI.Models
         [StringLength(18)]
         public String cnpj { get; set; }
 
+        //Só pus o aributo de email
+        //public String email { get; set; }
+
         [NotNull]
         [StringLength(50)]
         [Required]
@@ -38,8 +41,6 @@ namespace UIJobsAPI.Models
         [StringLength(30)]
         [Required]
         public String nomeFantasia { get; set; }
-
-//Tá Certo?
 
         [ForeignKey("idPortes")]
         public Porte Porte { get; set; }

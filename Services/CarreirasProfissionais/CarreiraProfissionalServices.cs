@@ -21,7 +21,7 @@ namespace UijobsApi.Services.CarreirasProfissionais
 
         public async Task<CarreiraProfissional> AddCarreiraProfissionalAsync(CarreiraProfissional novaCarreiraProfissional)
         {
-            CarreiraProfissional carreiraProfissionalExistente = await _carreiraProfissionalRepository.GetCarreiraProfissionalByIdAsync(novaCarreiraProfissional.idCarreiraProfissional);
+            CarreiraProfissional carreiraProfissionalExistente = await _carreiraProfissionalRepository.GetCarreiraProfissionalByIdAsync(novaCarreiraProfissional.sqCarreiraProfissional);
             if (carreiraProfissionalExistente != null && carreiraProfissionalExistente.Equals(novaCarreiraProfissional))
             {
                 // bad request exception \/

@@ -29,7 +29,7 @@ namespace UijobsApi.DAL.Repositories.Cursos
 
         public async Task<Curso> GetCursoByIdAsync(int id)
         {
-            return await _context.Cursos.FirstOrDefaultAsync(curso => curso.idCurso == id);
+            return await _context.Cursos.FirstOrDefaultAsync(curso => curso.idCursos == id);
         }
 
         public async Task DeleteCursoByIdAsync(Curso curso)

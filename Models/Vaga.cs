@@ -9,7 +9,7 @@ namespace UIJobsAPI.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int idVaga { get; set; }
+        public int idVagas { get; set; }
 
         [Required]
         public int idEscolaridade { get; set; }

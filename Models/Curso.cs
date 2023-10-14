@@ -8,7 +8,7 @@ namespace UIJobsAPI.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int idCurso { get; set; }
+        public int idCursos { get; set; }
 
         [Required]
         public String nomeCurso { get; set; }

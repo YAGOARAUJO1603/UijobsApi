@@ -14,7 +14,7 @@ namespace UijobsApi.DAL.Repositories.Vagas
         }
         public async Task<Vaga> GetVagaByIdAsync(int id)
         {
-            return await _context.Vagas.FirstOrDefaultAsync(vaga => vaga.idVaga == id);
+            return await _context.Vagas.FirstOrDefaultAsync(vaga => vaga.idVagas == id);
         }
 
         public async Task<IEnumerable<Vaga>> GetAllVagaAsync()

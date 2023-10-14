@@ -10,6 +10,7 @@ namespace UIJobsAPI.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int idNivel { get; set; }
 
+        //Isso afeta o banco
         [Required]
         public NivelEnum niveisDisponiveis { get; set; }
     }

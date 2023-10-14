@@ -61,7 +61,7 @@ namespace UijobsApi.Migrations
                     b.Property<int>("idBeneficio")
                         .HasColumnType("int");
 
-                    b.Property<string>("idVaga")
+                    b.Property<string>("idVagas")
                         .HasColumnType("nvarchar(max)");
 
                     b.ToTable("BeneficiosVagas");
@@ -120,11 +120,11 @@ namespace UijobsApi.Migrations
 
             modelBuilder.Entity("UijobsApi.Models.CarreiraProfissional", b =>
                 {
-                    b.Property<int>("idCarreiraProfissional")
+                    b.Property<int>("sqCarreiraProfissional")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idCarreiraProfissional"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("sqCarreiraProfissional"));
 
                     b.Property<string>("cargo")
                         .HasColumnType("nvarchar(max)");
@@ -135,28 +135,28 @@ namespace UijobsApi.Migrations
                     b.Property<string>("tempo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("idCarreiraProfissional");
+                    b.HasKey("sqCarreiraProfissional");
 
                     b.ToTable("CarreirasProfissionais");
 
                     b.HasData(
                         new
                         {
-                            idCarreiraProfissional = 1,
+                            sqCarreiraProfissional = 1,
                             cargo = "NULO",
                             nomeEmpresa = "NULO",
                             tempo = "NULO"
                         },
                         new
                         {
-                            idCarreiraProfissional = 2,
+                            sqCarreiraProfissional = 2,
                             cargo = "Vendedor",
                             nomeEmpresa = "Onix Rolamentos",
                             tempo = "2 anos"
                         },
                         new
                         {
-                            idCarreiraProfissional = 3,
+                            sqCarreiraProfissional = 3,
                             cargo = "Contador",
                             nomeEmpresa = "Contabilidade Arujo",
                             tempo = "6 meses"
@@ -204,7 +204,7 @@ namespace UijobsApi.Migrations
                     b.Property<string>("idNivel")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("idVaga")
+                    b.Property<int>("idVagas")
                         .HasColumnType("int");
 
                     b.ToTable("ConhecimentosVagas");
@@ -218,7 +218,7 @@ namespace UijobsApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CurriculoId"));
 
-                    b.Property<int?>("CarreiraProfissionalidCarreiraProfissional")
+                    b.Property<int?>("CarreiraProfissionalsqCarreiraProfissional")
                         .HasColumnType("int");
 
                     b.Property<string>("ConhecimentoId1")
@@ -238,7 +238,7 @@ namespace UijobsApi.Migrations
 
                     b.HasKey("CurriculoId");
 
-                    b.HasIndex("CarreiraProfissionalidCarreiraProfissional");
+                    b.HasIndex("CarreiraProfissionalsqCarreiraProfissional");
 
                     b.HasIndex("FormacaoAcademicaidFormacaoAcademica");
 
@@ -273,46 +273,46 @@ namespace UijobsApi.Migrations
 
             modelBuilder.Entity("UijobsApi.Models.Curso", b =>
                 {
-                    b.Property<int>("idCurso")
+                    b.Property<int>("idCursos")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idCurso"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idCursos"));
 
                     b.Property<string>("nomeCurso")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("idCurso");
+                    b.HasKey("idCursos");
 
                     b.ToTable("Cursos");
 
                     b.HasData(
                         new
                         {
-                            idCurso = 1,
+                            idCursos = 1,
                             nomeCurso = "DS"
                         },
                         new
                         {
-                            idCurso = 2,
+                            idCursos = 2,
                             nomeCurso = "DS"
                         },
                         new
                         {
-                            idCurso = 3,
+                            idCursos = 3,
                             nomeCurso = "DS"
                         });
                 });
 
             modelBuilder.Entity("UijobsApi.Models.CursoVaga", b =>
                 {
-                    b.Property<int>("idCurso")
+                    b.Property<int>("idCursos")
                         .HasColumnType("int");
 
-                    b.Property<string>("idCursoVaga")
+                    b.Property<string>("idCursosVaga")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("idVaga")
+                    b.Property<int>("idVagas")
                         .HasColumnType("int");
 
                     b.ToTable("CursosVagas");
@@ -533,13 +533,13 @@ namespace UijobsApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idFormacaoAcademica"));
 
-                    b.Property<int?>("cursoidCurso")
+                    b.Property<int?>("cursoidCursos")
                         .HasColumnType("int");
 
                     b.Property<int?>("graduacaoidGraduacao")
                         .HasColumnType("int");
 
-                    b.Property<string>("idCurso")
+                    b.Property<string>("idCursos")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("idGraduação")
@@ -550,7 +550,7 @@ namespace UijobsApi.Migrations
 
                     b.HasKey("idFormacaoAcademica");
 
-                    b.HasIndex("cursoidCurso");
+                    b.HasIndex("cursoidCursos");
 
                     b.HasIndex("graduacaoidGraduacao");
 
@@ -560,21 +560,21 @@ namespace UijobsApi.Migrations
                         new
                         {
                             idFormacaoAcademica = 1,
-                            idCurso = "DS",
+                            idCursos = "DS",
                             idGraduação = "MARKETING DIGITAL",
                             idiomas = "Português nativo"
                         },
                         new
                         {
                             idFormacaoAcademica = 2,
-                            idCurso = "DS",
+                            idCursos = "DS",
                             idGraduação = "Nula",
                             idiomas = "Português nativo, Inglês"
                         },
                         new
                         {
                             idFormacaoAcademica = 3,
-                            idCurso = "DS",
+                            idCursos = "DS",
                             idGraduação = "ENGENHARIA DE SOFTWARE",
                             idiomas = "Português nativo, Ingles"
                         });
@@ -726,11 +726,11 @@ namespace UijobsApi.Migrations
 
             modelBuilder.Entity("UijobsApi.Models.Vaga", b =>
                 {
-                    b.Property<int>("idVaga")
+                    b.Property<int>("idVagas")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idVaga"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idVagas"));
 
                     b.Property<int>("cargaHoraria")
                         .HasColumnType("int");
@@ -762,14 +762,14 @@ namespace UijobsApi.Migrations
                     b.Property<string>("situacaoVaga")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("idVaga");
+                    b.HasKey("idVagas");
 
                     b.ToTable("Vagas");
 
                     b.HasData(
                         new
                         {
-                            idVaga = 1,
+                            idVagas = 1,
                             cargaHoraria = 9,
                             cargo = "Analista de Sistemas",
                             descricao = "xxxxx",
@@ -783,7 +783,7 @@ namespace UijobsApi.Migrations
                         },
                         new
                         {
-                            idVaga = 2,
+                            idVagas = 2,
                             cargaHoraria = 9,
                             cargo = "Desenvolvedor FrontEnd",
                             descricao = "yyyyy",
@@ -797,7 +797,7 @@ namespace UijobsApi.Migrations
                         },
                         new
                         {
-                            idVaga = 3,
+                            idVagas = 3,
                             cargaHoraria = 9,
                             cargo = "Programador c#",
                             descricao = "zzzzz",
@@ -815,7 +815,7 @@ namespace UijobsApi.Migrations
                 {
                     b.HasOne("UijobsApi.Models.CarreiraProfissional", "CarreiraProfissional")
                         .WithMany()
-                        .HasForeignKey("CarreiraProfissionalidCarreiraProfissional");
+                        .HasForeignKey("CarreiraProfissionalsqCarreiraProfissional");
 
                     b.HasOne("UijobsApi.Models.FormacaoAcademica", "FormacaoAcademica")
                         .WithMany()
@@ -830,7 +830,7 @@ namespace UijobsApi.Migrations
                 {
                     b.HasOne("UijobsApi.Models.Curso", "curso")
                         .WithMany()
-                        .HasForeignKey("cursoidCurso");
+                        .HasForeignKey("cursoidCursos");
 
                     b.HasOne("UijobsApi.Models.Graduacao", "graduacao")
                         .WithMany()

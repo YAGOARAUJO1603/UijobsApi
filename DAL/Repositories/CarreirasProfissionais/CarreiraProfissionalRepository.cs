@@ -33,7 +33,7 @@ namespace UijobsApi.DAL.Repositories.CarreirasProfissionais
 
         public async Task<CarreiraProfissional> GetCarreiraProfissionalByIdAsync(int id)
         {
-            return await _context.CarreiraProfissional.FirstOrDefaultAsync(carrProf => carrProf.idCarreiraProfissional == id);
+            return await _context.CarreiraProfissional.FirstOrDefaultAsync(carrProf => carrProf.sqCarreiraProfissional == id);
         }
 
 
