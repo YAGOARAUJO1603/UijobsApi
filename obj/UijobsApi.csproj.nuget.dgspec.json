@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\etechas\\Desktop\\UijobsApi\\UijobsApi.csproj": {}
+    "C:\\Users\\etechas\\Desktop\\UijobsApi\\UijobsApi\\UijobsApi.csproj": {}
   },
   "projects": {
-    "c:\\Users\\etechas\\Desktop\\UijobsApi\\UijobsApi.csproj": {
+    "C:\\Users\\etechas\\Desktop\\UijobsApi\\UijobsApi\\UijobsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\etechas\\Desktop\\UijobsApi\\UijobsApi.csproj",
+        "projectUniqueName": "C:\\Users\\etechas\\Desktop\\UijobsApi\\UijobsApi\\UijobsApi.csproj",
         "projectName": "UijobsApi",
-        "projectPath": "c:\\Users\\etechas\\Desktop\\UijobsApi\\UijobsApi.csproj",
+        "projectPath": "C:\\Users\\etechas\\Desktop\\UijobsApi\\UijobsApi\\UijobsApi.csproj",
         "packagesPath": "C:\\Users\\etechas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\etechas\\Desktop\\UijobsApi\\obj\\",
+        "outputPath": "C:\\Users\\etechas\\Desktop\\UijobsApi\\UijobsApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

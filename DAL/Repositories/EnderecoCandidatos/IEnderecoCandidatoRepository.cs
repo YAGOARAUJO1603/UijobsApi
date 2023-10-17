@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using UIJobsAPI.Data;
 using UIJobsAPI.Models;
 
 namespace UijobsApi.DAL.Repositories.EnderecoCandidatos
