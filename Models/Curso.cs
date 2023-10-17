@@ -15,7 +15,7 @@ namespace UIJobsAPI.Models
 
         [Required]
         [MaxLength(3)]
-        public string diplomaCurso { get; set; }
+        public string DiplomaCurso { get; set; }
 
     }
 }

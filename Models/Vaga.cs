@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Threading.RateLimiting;
+using System.Diagnostics.CodeAnalysis;
 
 namespace UIJobsAPI.Models
 {
@@ -30,13 +32,15 @@ namespace UIJobsAPI.Models
 
         public DateTime? finalVigencia { get; set; }
 
-        public double? salario { get; set; }
+        [NotNull]
+        public float? salario { get; set; }
 
-        public ushort? cargaHoraria { get; set; }
+        public short cargaHoraria { get; set; }
 
         public string localidade { get; set; }
 
-        public double? percAderencia { get; set; }
+        [NotNull]
+        public float? percAderencia { get; set; }
 
         [StringLength(30)]
         public string tempoSemanal { get; set; }

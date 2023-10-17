@@ -12,6 +12,6 @@ namespace UIJobsAPI.Models
 
         //Isso afeta o banco
         [Required]
-        public NivelEnum niveisDisponiveis { get; set; }
+        public string niveisDisponiveis { get; set; }
     }
 }

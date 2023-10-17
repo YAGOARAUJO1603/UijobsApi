@@ -7,6 +7,11 @@ namespace UijobsApi.DAL.Repositories.VagasCandidatos
     public class VagaCandidatoRepository : IVagaCandidatoRepository
     {
         private readonly DataContext _context;
+
+        public VagaCandidatoRepository(DataContext context)
+        {
+            _context = context;
+        }
         public async Task<VagaCandidato> AddVagaCandidatoAsync(VagaCandidato novaVagaCandidato)
         {
             await _context.VagasCandidato.AddAsync(novaVagaCandidato);

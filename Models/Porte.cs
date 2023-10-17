@@ -15,6 +15,6 @@ namespace UIJobsAPI.Models
         public int idPortes { get; set; }
         [NotNull]
         [Required]
-        public PorteEnum tiposPortes { get; set; }
+        public string tiposPortes { get; set; }
     }
 }

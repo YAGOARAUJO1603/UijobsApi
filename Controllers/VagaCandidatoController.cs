@@ -14,14 +14,10 @@ namespace UijobsApi.Controllers
     public class VagaCandidatoController : ControllerBase
     {
         private readonly IVagaCandidatoService _vagaCandidatoService;
-        private readonly IVagaCandidatoRepository _vagaCandidatoRepository;
-        private readonly DataContext _context;
 
-        public VagaCandidatoController(IVagaCandidatoService vagaCandidatoService, IVagaCandidatoRepository vagaCandidatoRepository, DataContext context)
+        public VagaCandidatoController(IVagaCandidatoService vagaCandidatoService)
         {
             _vagaCandidatoService = vagaCandidatoService;
-            _vagaCandidatoRepository = vagaCandidatoRepository;
-            _context = context;
         }
 
         [HttpGet("{id}")]

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics.CodeAnalysis;
 
 namespace UIJobsAPI.Models
 {
@@ -8,11 +9,14 @@ namespace UIJobsAPI.Models
     public class CurriculoConhecimento
     {
         [Column(Order = 0)]
+        [NotNull]
         public int idCurriculo { get; set; }
 
         [Column(Order = 1)]
+        [NotNull]
         public int idConhecimentos { get; set; }
-        
+
+        [NotNull]
         public int idNivel { get; set; }
 
         [ForeignKey("idCurriculo")]

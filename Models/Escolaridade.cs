@@ -13,10 +13,10 @@ namespace UIJobsAPI.Models
         [StringLength(50)]
         public string nomeEscolaridade { get; set; }
 
-        [Required]
+       /* [Required]
         public DateTime inicioEscolaridade { get; set; }
 
         [Required]
-        public DateTime fimEscolaridade { get; set; }
+        public DateTime fimEscolaridade { get; set; } */
     }
 }

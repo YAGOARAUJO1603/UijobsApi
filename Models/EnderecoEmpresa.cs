@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 using UIJobsAPI.Models;
 
 
@@ -28,7 +29,7 @@ public class EnderecoEmpresa
     public string numero { get; set; }
 
     [StringLength(20)]
-    public string complemento { get; set; }
+    public string? complemento { get; set; }
 
     [Required]
     [StringLength(30)]

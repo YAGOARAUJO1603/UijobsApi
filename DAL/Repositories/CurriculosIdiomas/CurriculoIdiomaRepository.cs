@@ -8,6 +8,11 @@ namespace UijobsApi.DAL.Repositories.CurriculosIdiomas
     {
         private readonly DataContext _context;
 
+        public CurriculoIdiomaRepository(DataContext context)
+        {
+            _context = context;
+        }
+
         public async Task<CurriculoIdioma> AddCurriculoIdiomaAsync(CurriculoIdioma novoCurriculoIdioma)
         {
             await _context.CurriculoIdiomas.AddAsync(novoCurriculoIdioma);
