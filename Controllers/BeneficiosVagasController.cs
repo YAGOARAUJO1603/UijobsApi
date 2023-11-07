@@ -24,7 +24,7 @@ namespace UijobsApi.Controllers
         {
             try
             {
-                BeneficioVaga beneficioVaga = await _beneficioVagaService.GetBeneficioVagaByIdAsync(id);
+                IEnumerable<BeneficioVaga> beneficioVaga = await _beneficioVagaService.GetBeneficioVagaByIdAsync(id);
                 return Ok(beneficioVaga);
             }
             catch (BaseException ex)
@@ -37,6 +37,23 @@ namespace UijobsApi.Controllers
             }
         }
 
+        [HttpGet("{vagaId}/{beneficioId}")]
+        public async Task<IActionResult> GetByVagaIdBeneficioIdAsync(int vagaId, int beneficioId)
+        {
+            try
+            {
+                BeneficioVaga beneficioVaga = await _beneficioVagaService.GetBeneficioVagaAsync(vagaId, beneficioId);
+                return Ok(beneficioVaga);
+            }
+            catch (BaseException ex)
+            {
+                return ex.GetResponse();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+        }
 
         [HttpPost]
         public async Task<IActionResult> AddCBeneficioVagaAsync(BeneficioVaga novoBeneficioVaga)
@@ -53,12 +70,12 @@ namespace UijobsApi.Controllers
         }
 
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteBenficioVaga(int id)
+        [HttpDelete("{idBeneficio}/{idVaga}")]
+        public async Task<IActionResult> DeleteBenficioVaga(int idBeneficio, int idVaga)
         {
             try
             {
-                await _beneficioVagaService.DeleteBeneficioVagaByIdAsync(id);
+                await _beneficioVagaService.DeleteBeneficioVagaByIdAsync(idBeneficio, idVaga);
                 return NoContent(); // Retorna uma resposta 204 No Content após a exclusão bem-sucedida.
             }
             catch (Exception ex)

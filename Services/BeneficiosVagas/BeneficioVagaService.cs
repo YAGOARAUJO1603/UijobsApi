@@ -17,10 +17,9 @@ namespace UijobsApi.Services.BeneficiosVagas
         }
         public async Task<BeneficioVaga> AddBeneficioVagaAsync(BeneficioVaga novoBeneficioVaga)
         {
-            BeneficioVaga beneficioVagaExistente = await _beneficioVagaRepository.GetBeneficioVagaByIdAsync(novoBeneficioVaga.idBeneficio);
+            BeneficioVaga beneficioVagaExistente = await _beneficioVagaRepository.GetBeneficioVagaAsync(novoBeneficioVaga.idBeneficio, novoBeneficioVaga.idVagas);
             if (beneficioVagaExistente != null && beneficioVagaExistente.Equals(novoBeneficioVaga))
             {
-                // bad request exception \/
                 throw new Exception("Já existe um beneficio Vaga cadastrado com esse Id");
             }
             BeneficioVaga beneficioVaga = await _beneficioVagaRepository.AddBeneficioVagaAsync(novoBeneficioVaga);
@@ -28,25 +27,39 @@ namespace UijobsApi.Services.BeneficiosVagas
             return beneficioVaga;
         }
 
-        public async Task DeleteBeneficioVagaByIdAsync(int id)
+        public async Task DeleteBeneficioVagaByIdAsync(int idBeneficio, int idVaga)
         {
-            BeneficioVaga beneficioVaga = await _beneficioVagaRepository.GetBeneficioVagaByIdAsync(id);
+            var beneficioVagas = await _beneficioVagaRepository.GetBeneficioVagaByIdAsync(idBeneficio);
 
-            if (beneficioVaga is null)
+            if (beneficioVagas == null)
             {
                 throw new NotFoundException("BeneficioVaga com id não existe");
             }
-            _beneficioVagaRepository.DeleteBeneficioVagaByIdAsync(beneficioVaga);
+
+            await _beneficioVagaRepository.DeleteBeneficioVagaByIdAsync(idBeneficio, idVaga);
             await _unitOfWork.SaveChangesAsync();
         }
 
-        public async Task<BeneficioVaga> GetBeneficioVagaByIdAsync(int id)
+        public async Task<IEnumerable<BeneficioVaga>> GetBeneficioVagaByIdAsync(int id)
         {
-            BeneficioVaga beneficioVaga = await _beneficioVagaRepository.GetBeneficioVagaByIdAsync(id);
+            IEnumerable<BeneficioVaga> beneficioVaga = await _beneficioVagaRepository.GetBeneficioVagaByIdAsync(id);
 
             if (beneficioVaga == null)
             {
                 throw new NotFoundException("BeneficioVaga");
+            }
+
+            return beneficioVaga;
+        }
+
+        public async Task<BeneficioVaga> GetBeneficioVagaAsync(int beneficioId, int vagaId)
+        {
+            var beneficioVaga = await _beneficioVagaRepository.GetBeneficioVagaAsync(beneficioId, vagaId);
+
+            if (beneficioVaga == null)
+            {
+
+                throw new NotFoundException("BeneficioVaga não encontrado");
             }
 
             return beneficioVaga;

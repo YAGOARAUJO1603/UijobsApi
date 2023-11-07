@@ -18,14 +18,36 @@ namespace UijobsApi.DAL.Repositories.BeneficiosVagas
             return novoBeneficioVaga;
         }
 
-        public async Task DeleteBeneficioVagaByIdAsync(BeneficioVaga beneficioVaga)
+        /*public async Task DeleteBeneficioVagaByIdAsync(BeneficioVaga beneficioVaga)
         {
             _context.BeneficioVagas.Remove(beneficioVaga);
+        } */
+
+        public async Task DeleteBeneficioVagaByIdAsync(int idBeneficio, int idVaga)
+        {
+            var beneficioVaga = await _context.BeneficioVagas.FirstOrDefaultAsync(bv => bv.idBeneficio == idBeneficio && bv.idVagas == idVaga);
+
+            if (beneficioVaga != null)
+            {
+                _context.BeneficioVagas.Remove(beneficioVaga);
+                await _context.SaveChangesAsync();
+            }
         }
 
-        public async Task<BeneficioVaga> GetBeneficioVagaByIdAsync(int id)
+        public async Task<BeneficioVaga> GetBeneficioVagaAsync(int beneficioId, int vagaId)
+        {
+            return await _context.BeneficioVagas.FirstOrDefaultAsync(bv => bv.idBeneficio == beneficioId && bv.idVagas == vagaId);
+        }
+
+        /*public async Task<BeneficioVaga> GetBeneficioVagaByIdAsync(int id)
         {
             return await _context.BeneficioVagas.FirstOrDefaultAsync(benefVaga => benefVaga.idBeneficio == id);
+        }*/
+
+        async Task<IEnumerable<BeneficioVaga>> IBeneficioVagaRepository.GetBeneficioVagaByIdAsync(int id)
+        {
+            IEnumerable<BeneficioVaga> beneficioVaga = (IEnumerable<BeneficioVaga>)await _context.BeneficioVagas.FirstOrDefaultAsync(benefVaga => benefVaga.idBeneficio == id);
+            return beneficioVaga;
         }
     }
 }
