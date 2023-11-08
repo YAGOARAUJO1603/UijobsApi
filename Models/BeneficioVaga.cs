@@ -14,9 +14,11 @@ namespace UIJobsAPI.Models
         [Column(Order = 1)]
         public int idBeneficio { get; set; }
 
+        [NotMapped]
         [ForeignKey("idVagas")]
         public Vaga Vagas { get; set; }
 
+        [NotMapped]
         [ForeignKey("idBeneficio")]
         public Beneficio Beneficio { get; set; }
 

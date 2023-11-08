@@ -42,7 +42,7 @@ namespace UijobsApi.Controllers
         {
             try
             {
-                BeneficioVaga beneficioVaga = await _beneficioVagaService.GetBeneficioVagaAsync(vagaId, beneficioId);
+                BeneficioVaga beneficioVaga = await _beneficioVagaService.GetBeneficioVagaAsync(beneficioId, vagaId);
                 return Ok(beneficioVaga);
             }
             catch (BaseException ex)

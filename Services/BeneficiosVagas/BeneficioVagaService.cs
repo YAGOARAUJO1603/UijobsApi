@@ -29,7 +29,7 @@ namespace UijobsApi.Services.BeneficiosVagas
 
         public async Task DeleteBeneficioVagaByIdAsync(int idBeneficio, int idVaga)
         {
-            var beneficioVagas = await _beneficioVagaRepository.GetBeneficioVagaByIdAsync(idBeneficio);
+            var beneficioVagas = await _beneficioVagaRepository.GetBeneficioVagaAsync(idBeneficio,idVaga);
 
             if (beneficioVagas == null)
             {
@@ -58,7 +58,6 @@ namespace UijobsApi.Services.BeneficiosVagas
 
             if (beneficioVaga == null)
             {
-
                 throw new NotFoundException("BeneficioVaga não encontrado");
             }
 
