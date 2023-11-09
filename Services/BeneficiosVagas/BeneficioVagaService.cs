@@ -40,7 +40,7 @@ namespace UijobsApi.Services.BeneficiosVagas
             await _unitOfWork.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<BeneficioVaga>> GetBeneficioVagaByIdAsync(int id)
+       /* public async Task<IEnumerable<BeneficioVaga>> GetBeneficioVagaByIdAsync(int id)
         {
             IEnumerable<BeneficioVaga> beneficioVaga = await _beneficioVagaRepository.GetBeneficioVagaByIdAsync(id);
 
@@ -50,7 +50,7 @@ namespace UijobsApi.Services.BeneficiosVagas
             }
 
             return beneficioVaga;
-        }
+        }*/
 
         public async Task<BeneficioVaga> GetBeneficioVagaAsync(int beneficioId, int vagaId)
         {

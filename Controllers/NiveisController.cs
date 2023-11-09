@@ -8,6 +8,7 @@ using UIJobsAPI.Data;
 using UIJobsAPI.Models;
 using UIJobsAPI.Exceptions;
 using UijobsApi.DAL.Repositories.Niveis;
+using UIJobsAPI.Models.Enuns;
 
 namespace UijobsApi.Controllers
 {
@@ -48,7 +49,10 @@ namespace UijobsApi.Controllers
         {
             try
             {
+                
+
                 Nivel nivel = await _nivelService.GetNivelByIdAsync(id);
+
                 return Ok(nivel);
             }
             catch (BaseException ex)

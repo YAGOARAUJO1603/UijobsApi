@@ -11,6 +11,6 @@ namespace UIJobsAPI.Models
         public int idSituacaoVaga { get; set; }
 
         [Required]
-        public SituacaoEnum situacaoAtual { get; set; }
+        public String situacaoAtual { get; set; }
     }
 }

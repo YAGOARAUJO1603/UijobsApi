@@ -2,16 +2,22 @@
 {
     public enum BeneficioEnum
     {
-        ValeRefeicao = 1,
-        ValeAlimentacao = 2,
-        PlanoSaude = 3,
-        PlanoDental = 4,
-        SeguroVida = 5,
-        AuxilioTransporte = 6,
-        HomeOffice = 7,
-        HorarioFlexivel = 8,
-        Bonificacao = 9,
-        ParticipacaoLucros = 10,
-        Outros = 11
+        AssistênciaMédica = 1,
+        AssistênciaOdontológica = 2,
+        ValeRefeição = 3,
+        ValeAlimentação = 4,
+        ValeTransporte = 5,
+        AuxílioCreche = 6,
+        HomeOfficeFlexível = 7,
+        ProgramaDeDesenvolvimentoProfissional = 8,
+        HorárioFlexível = 9,
+        BônusAnual = 10,
+        ParticipaçãoNosLucrosEResultados = 11	,
+        DiasDeFériasAdicionais = 12,
+        SegurodeVida = 13,
+        PrevidênciaPrivada = 14,
+        GinásticaLaboral = 15,
+        CaféDaManhãGrátis = 16,
+        AuxílioEducação = 17
     }
 }

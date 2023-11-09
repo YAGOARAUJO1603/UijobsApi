@@ -5,7 +5,6 @@ namespace UIJobsAPI.Models
 {
     public class BeneficioVaga
     {
-
         [Key]
         [Column(Order = 0)]
         public int idVagas { get; set; }
@@ -21,7 +20,5 @@ namespace UIJobsAPI.Models
         [NotMapped]
         [ForeignKey("idBeneficio")]
         public Beneficio Beneficio { get; set; }
-
-
     }
 }

@@ -699,3 +699,4 @@ C:\Users\etechas\Desktop\UijobsApi\UijobsApi\obj\Debug\net7.0\refint\UijobsApi.d
 C:\Users\etechas\Desktop\UijobsApi\UijobsApi\obj\Debug\net7.0\UijobsApi.pdb
 C:\Users\etechas\Desktop\UijobsApi\UijobsApi\obj\Debug\net7.0\UijobsApi.genruntimeconfig.cache
 C:\Users\etechas\Desktop\UijobsApi\UijobsApi\obj\Debug\net7.0\ref\UijobsApi.dll
+D:\Projetos_DS\UijobsApi\bin\Debug\net7.0\Properties\appsettings.json

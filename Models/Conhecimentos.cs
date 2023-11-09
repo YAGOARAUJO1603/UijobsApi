@@ -8,6 +8,6 @@ namespace UIJobsAPI.Models
     public class Conhecimentos
     {
         public int idConhecimentos { get; set; }
-        public ConhecimentoEnum nomeConhecimento { get; set; }
+        public string nomeConhecimento { get; set; }
     }
 }

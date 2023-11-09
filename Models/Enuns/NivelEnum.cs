@@ -2,10 +2,10 @@
 {
     public enum NivelEnum
     {
-        Inexistente = 0,
-        Iniciante = 1,
+        Básico = 1,
         Intermediario = 2,
         Avancado = 3,
-        Especialista = 4
+        Especialista = 4,
+        Domínio = 5
     }
 }

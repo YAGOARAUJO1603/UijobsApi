@@ -18,11 +18,6 @@ namespace UijobsApi.DAL.Repositories.BeneficiosVagas
             return novoBeneficioVaga;
         }
 
-        /*public async Task DeleteBeneficioVagaByIdAsync(BeneficioVaga beneficioVaga)
-        {
-            _context.BeneficioVagas.Remove(beneficioVaga);
-        } */
-
         public async Task DeleteBeneficioVagaByIdAsync(int idBeneficio, int idVaga)
         {
             var beneficioVaga = await _context.BeneficioVagas.FirstOrDefaultAsync(bv => bv.idBeneficio == idBeneficio && bv.idVagas == idVaga);
@@ -43,10 +38,10 @@ namespace UijobsApi.DAL.Repositories.BeneficiosVagas
             return await _context.BeneficioVagas.FirstOrDefaultAsync(benefVaga => benefVaga.idBeneficio == id);
         }*/
 
-        public async Task<IEnumerable<BeneficioVaga>> GetBeneficioVagaByIdAsync(int id)
+       /* public async Task<IEnumerable<BeneficioVaga>> GetBeneficioVagaByIdAsync(int id)
         {
-            IEnumerable<BeneficioVaga> beneficioVaga = await _context.BeneficioVagas.FirstOrDefaultAsync(benefVaga => benefVaga.idBeneficio == id);
+            IEnumerable<BeneficioVaga> beneficioVaga = (IEnumerable<BeneficioVaga>)await _context.BeneficioVagas.FirstOrDefaultAsync(benefVaga => benefVaga.idBeneficio == id);
             return beneficioVaga;
-        }
+        } */
     }
 }

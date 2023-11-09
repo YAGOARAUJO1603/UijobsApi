@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using UijobsApi.DAL.Repositories.Niveis;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
+using UIJobsAPI.Models.Enuns;
 
 namespace UijobsApi.Services.Niveis
 {
@@ -30,6 +31,11 @@ namespace UijobsApi.Services.Niveis
             {
                 throw new NotFoundException("Candidato");
             }
+
+            /*if (nivel.idNivel == (int)NivelEnum.Especialista)
+            {
+
+            }*/
 
             return nivel;
         }

@@ -2,7 +2,9 @@
 {
     public enum SituacaoEnum
     {
-        Aberta = 1,
-        Encerrada = 2
+        Iniciada = 1,
+        Concluida = 2,
+        Suspensa = 3,
+        Cancelada = 4
     }
 }

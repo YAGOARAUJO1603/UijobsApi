@@ -19,7 +19,7 @@ namespace UijobsApi.Controllers
             _context = context;
         }
 
-        [HttpGet("{id}")]
+       /* [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
             try
@@ -35,7 +35,7 @@ namespace UijobsApi.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
-        }
+        } */
 
         [HttpGet("{vagaId}/{beneficioId}")]
         public async Task<IActionResult> GetByVagaIdBeneficioIdAsync(int vagaId, int beneficioId)
