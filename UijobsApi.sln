@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.001.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UijobsApi", "UiJobs.api\UijobsApi.csproj", "{44F5CB00-4B1D-4B18-A2B6-0458A67083B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UijobsApi.Tests", "UijobsApi.Tests\UijobsApi.Tests.csproj", "{65A2E589-A225-4E76-8486-69B0F17F01F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{44F5CB00-4B1D-4B18-A2B6-0458A67083B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44F5CB00-4B1D-4B18-A2B6-0458A67083B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44F5CB00-4B1D-4B18-A2B6-0458A67083B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A2E589-A225-4E76-8486-69B0F17F01F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A2E589-A225-4E76-8486-69B0F17F01F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A2E589-A225-4E76-8486-69B0F17F01F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A2E589-A225-4E76-8486-69B0F17F01F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

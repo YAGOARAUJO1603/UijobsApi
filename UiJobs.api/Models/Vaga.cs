@@ -32,7 +32,7 @@ namespace UIJobsAPI.Models
 
         public double? salario { get; set; }
 
-        public ushort? cargaHoraria { get; set; }
+        public ushort cargaHoraria { get; set; }
 
         public string localidade { get; set; }
 

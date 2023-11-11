@@ -2,6 +2,7 @@
 using UijobsApi.DAL.Repositories.Idiomas;
 using UijobsApi.DAL.Repositories.Vagas;
 using UijobsApi.DAL.Unit_of_Work;
+using UijobsApi.Exceptions;
 using UIJobsAPI.Exceptions;
 using UIJobsAPI.Models;
 
@@ -36,12 +37,7 @@ namespace UijobsApi.Services.Vagas
 
         public async Task<Vaga> AddVagaAsync(Vaga novaVaga)
         {
-            Vaga vagaExistente = await _vagaRepository.GetVagaByIdAsync(novaVaga.idVagas);
-            if (vagaExistente != null && vagaExistente.Equals(novaVaga))
-            {
-                // bad request exception \/
-                throw new Exception("Já existe uma Vaga cadastrado com esse Id.");
-            }
+            ValidarCargaHoraria(novaVaga.cargaHoraria);
             Vaga vaga = await _vagaRepository.AddVagaAsync(novaVaga);
             await _unitOfWork.SaveChangesAsync();
             return vaga;
@@ -59,6 +55,13 @@ namespace UijobsApi.Services.Vagas
             await _unitOfWork.SaveChangesAsync();
         }
 
-
+        public Task ValidarCargaHoraria(ushort cargaHoraria)
+        {
+            if (cargaHoraria > 40 || cargaHoraria < 30)
+            {
+                throw new BadRequestException("Carga horária não permitida pela Lei. A carga horária máxima é de 40 horas semanais.");
+            }
+            return null;
+        }
     }
 }
